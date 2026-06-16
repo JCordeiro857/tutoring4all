@@ -64,17 +64,36 @@ function initForms() {
       e.preventDefault();
       const btn = form.querySelector('[type="submit"]');
       const original = btn.textContent;
-      btn.textContent = '✓ Sent! We\'ll be in touch soon.';
-      btn.style.background = '#10b981';
-      btn.style.color = '#fff';
+      btn.textContent = 'Sending…';
       btn.disabled = true;
-      setTimeout(() => {
-        btn.textContent = original;
-        btn.style.background = '';
-        btn.style.color = '';
-        btn.disabled = false;
-        form.reset();
-      }, 4000);
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString()
+      }).then(res => {
+        if (!res.ok) throw new Error('Submission failed: ' + res.status);
+        btn.textContent = '✓ Sent! We\'ll be in touch soon.';
+        btn.style.background = '#10b981';
+        btn.style.color = '#fff';
+        setTimeout(() => {
+          btn.textContent = original;
+          btn.style.background = '';
+          btn.style.color = '';
+          btn.disabled = false;
+          form.reset();
+        }, 4000);
+      }).catch(() => {
+        btn.textContent = 'Something went wrong — please try again or call us.';
+        btn.style.background = '#ef4444';
+        btn.style.color = '#fff';
+        setTimeout(() => {
+          btn.textContent = original;
+          btn.style.background = '';
+          btn.style.color = '';
+          btn.disabled = false;
+        }, 4000);
+      });
     });
   });
 }

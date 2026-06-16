@@ -72,7 +72,9 @@
     <div class="app-form-card">
       <h2>Tutor Application Form</h2>
       <p class="sub">Complete the form below to apply. This is an initial application only — we'll be in touch to discuss next steps.</p>
-      <form data-ajax>
+      <form data-ajax name="tutor-application" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="tutor-application" />
+        <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
 
         <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 20px;padding-bottom:10px;border-bottom:1px solid var(--gray-200);">Personal Information</h3>
         <div class="form-row">
