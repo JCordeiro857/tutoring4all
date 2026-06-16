@@ -38,18 +38,31 @@ async function renderTutors() {
   if (window.initReveal) initReveal();
 }
 
-/* ── Homepage testimonials (index.html) ── */
+/* ── Homepage Google reviews marquee (index.html) ── */
 async function renderTestimonials() {
-  const grid = document.querySelector('.testimonials-grid');
-  if (!grid) return;
-  const testimonials = (await loadJSON('content/testimonials.json')).testimonials;
-  grid.innerHTML = testimonials.map(t => `
-    <div class="testi-card reveal">
+  const track = document.querySelector('.reviews-track');
+  if (!track) return;
+  const data = await loadJSON('content/testimonials.json');
+  const visible = data.testimonials.filter(t => t.show !== false);
+
+  const starsRow = document.querySelector('.reviews-stars-row');
+  if (starsRow) {
+    const rounded = Math.round(data.googleRating || 5);
+    starsRow.textContent = '★'.repeat(rounded) + '☆'.repeat(5 - rounded);
+  }
+  const googleLine = document.querySelector('.reviews-google-line');
+  if (googleLine) {
+    googleLine.innerHTML = `Rated ${escapeHTML(String(data.googleRating || 5))} stars on ${data.googleUrl ? `<a href="${escapeHTML(data.googleUrl)}" target="_blank" rel="noopener">Google</a>` : 'Google'}`;
+  }
+
+  const cardHTML = visible.map(t => `
+    <div class="testi-card">
       <div class="stars">${'★'.repeat(t.stars)}${'☆'.repeat(5 - t.stars)}</div>
       <p>"${escapeHTML(t.quote)}"</p>
       <div class="testi-author"><div class="testi-avatar">${escapeHTML(t.initial)}</div><div><strong>${escapeHTML(t.name)}</strong><span>${escapeHTML(t.role)}</span></div></div>
     </div>`).join('');
-  if (window.initReveal) initReveal();
+  // duplicated so the CSS marquee (translateX -50%) loops seamlessly
+  track.innerHTML = cardHTML + cardHTML;
 }
 
 /* ── Homepage FAQ accordion (index.html#faqs) ── */

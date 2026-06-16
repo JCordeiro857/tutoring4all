@@ -161,25 +161,44 @@
     }
     .chip:hover { border-color: var(--gold); color: #b45309; background: var(--gold-light); }
 
-    /* ── TESTIMONIALS ── */
-    .testimonials-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
-    .testi-card {
-      background: var(--white); border: 1px solid var(--gray-200);
-      border-radius: var(--radius); padding: 28px;
-      transition: all .3s;
+    /* ── GOOGLE REVIEWS (sliding marquee) ── */
+    .reviews-section { background: var(--navy); padding: 80px 0 60px; overflow: hidden; }
+    .reviews-title {
+      font-family: 'Playfair Display', serif; font-weight: 800;
+      font-size: clamp(1.8rem, 3.4vw, 2.6rem); color: var(--white); margin-bottom: 18px;
     }
-    .testi-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); border-color: transparent; }
-    .stars { color: var(--gold); font-size: 1rem; margin-bottom: 14px; }
-    .testi-card p { font-size: 0.9rem; color: var(--gray-600); line-height: 1.7; font-style: italic; margin-bottom: 18px; }
+    .reviews-stars-row { color: var(--gold); font-size: 1.6rem; letter-spacing: 4px; margin-bottom: 10px; }
+    .reviews-google-line { color: rgba(255,255,255,0.65); font-style: italic; font-size: 1.02rem; margin-bottom: 44px; }
+    .reviews-google-line a { color: rgba(255,255,255,0.85); text-decoration: underline; }
+
+    .reviews-marquee { width: 100%; overflow: hidden; position: relative; -webkit-mask-image: linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); mask-image: linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); }
+    .reviews-track {
+      display: flex; gap: 20px; width: max-content;
+      animation: reviews-scroll 42s linear infinite;
+    }
+    .reviews-marquee:hover .reviews-track { animation-play-state: paused; }
+    @keyframes reviews-scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    .testi-card {
+      background: #15293f; border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius); padding: 26px;
+      width: 320px; flex-shrink: 0;
+    }
+    .stars { color: var(--gold); font-size: 0.95rem; margin-bottom: 14px; }
+    .testi-card p { font-size: 0.88rem; color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 18px;
+      display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
     .testi-author { display: flex; align-items: center; gap: 12px; }
     .testi-avatar {
       width: 38px; height: 38px; border-radius: 50%;
-      background: linear-gradient(135deg,var(--blue),var(--gold));
+      background: linear-gradient(135deg,#8b5cf6,#6d28d9);
       display: flex; align-items: center; justify-content: center;
-      font-size: 0.9rem; font-weight: 700; color: var(--white);
+      font-size: 0.9rem; font-weight: 700; color: var(--white); flex-shrink: 0;
     }
-    .testi-author strong { font-size: 0.88rem; color: var(--navy); display: block; }
-    .testi-author span { font-size: 0.78rem; color: var(--gray-400); }
+    .testi-author strong { font-size: 0.88rem; color: var(--white); display: block; }
+    .testi-author span { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+    @media (max-width: 640px) { .testi-card { width: 260px; } }
 
     /* ── FAQ HOME ── */
     #faqs { background: var(--gray-50); }
@@ -341,15 +360,15 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section style="background:var(--white);">
-  <div class="section-inner">
-    <div class="section-header center">
-      <span class="section-label">What Families Say</span>
-      <h2 class="section-title">Trusted by Sydney Families</h2>
-      <p class="section-sub">"Education is the most powerful weapon which you can use to change the world." — Nelson Mandela</p>
-    </div>
-    <div class="testimonials-grid"><!-- populated by content-render.js from content/testimonials.json --></div>
+<!-- TESTIMONIALS / GOOGLE REVIEWS -->
+<section class="reviews-section">
+  <div class="section-inner" style="text-align:center;">
+    <h2 class="reviews-title">Success Stories That Speak Volumes</h2>
+    <div class="reviews-stars-row"></div>
+    <p class="reviews-google-line"></p>
+  </div>
+  <div class="reviews-marquee">
+    <div class="reviews-track"><!-- populated by content-render.js from content/testimonials.json --></div>
   </div>
 </section>
 

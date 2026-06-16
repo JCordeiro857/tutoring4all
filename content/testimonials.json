@@ -1,6 +1,9 @@
 {
+"googleRating": 4.8,
+"googleUrl": "https://www.google.com/search?q=tutoring4all+sydney+reviews",
 "testimonials": [
   {
+    "show": true,
     "stars": 5,
     "quote": "Our tutor was absolutely wonderful with my daughter. Her confidence in Maths has improved enormously and she's no longer dreading school. Couldn't recommend Tutoring4All more highly.",
     "name": "Sarah M.",
@@ -8,6 +11,7 @@
     "initial": "S"
   },
   {
+    "show": true,
     "stars": 5,
     "quote": "We started with Tutoring4All for selective school prep and our son got into his first choice school. The personalised approach and practice materials made all the difference.",
     "name": "James T.",
@@ -15,11 +19,36 @@
     "initial": "J"
   },
   {
+    "show": true,
     "stars": 5,
     "quote": "The progress reports after every session are fantastic — I always know exactly what my son covered and what's planned for next time. It feels like a real partnership.",
     "name": "Lisa K.",
     "role": "Parent · Haberfield",
     "initial": "L"
+  },
+  {
+    "show": true,
+    "stars": 5,
+    "quote": "Jack responds best to calm, clear explanations, and his tutor really understood that. His understanding has improved and he's much more willing to ask questions now.",
+    "name": "Jack N.",
+    "role": "Chris N. · Year 9 Maths",
+    "initial": "JA"
+  },
+  {
+    "show": true,
+    "stars": 5,
+    "quote": "It has been a genuine pleasure to work with the fabulous tutors introduced to my son through Tutoring4All. In a matter of weeks, his confidence has increased and we have been delighted with his most recent assessment results.",
+    "name": "Melloney G.",
+    "role": "Parent of Year 11 Student",
+    "initial": "MG"
+  },
+  {
+    "show": true,
+    "stars": 5,
+    "quote": "As a previous student, I was getting 70-75% in Maths Standard 2 before working with my tutor. After working with them, I finished with a band 6 mark of 92 in my HSC. They gave me the confidence I needed ahead of my trials and exams.",
+    "name": "James T.",
+    "role": "Year 12 Student",
+    "initial": "JT"
   }
 ]
 }

@@ -53,21 +53,24 @@ collections:
             ] }
 
   - name: "testimonials"
-    label: "Testimonials"
-    label_singular: "Testimonial"
-    description: "Parent reviews shown on the homepage."
+    label: "Google Reviews"
+    label_singular: "Review"
+    description: "The sliding Google reviews carousel on the homepage. Tick 'Show on homepage' for any review you want displayed — untick to hide it without deleting it."
     files:
       - name: "testimonials"
-        label: "Testimonials"
+        label: "Reviews"
         file: "content/testimonials.json"
         format: "json"
         fields:
-          - { label: "Testimonials", name: "testimonials", widget: "list", root: true, fields: [
+          - { label: "Overall Google Rating (e.g. 4.8)", name: "googleRating", widget: "number", value_type: "float" }
+          - { label: "Link to your Google Reviews page", name: "googleUrl", widget: "string" }
+          - { label: "Reviews", name: "testimonials", widget: "list", fields: [
+              { label: "Show on homepage", name: "show", widget: "boolean", default: true },
               { label: "Star Rating (1-5)", name: "stars", widget: "number", value_type: "int", min: 1, max: 5, default: 5 },
               { label: "Quote", name: "quote", widget: "text" },
-              { label: "Parent Name", name: "name", widget: "string" },
+              { label: "Reviewer Name", name: "name", widget: "string" },
               { label: "Role / Suburb", name: "role", widget: "string" },
-              { label: "Avatar Initial", name: "initial", widget: "string" }
+              { label: "Avatar Initial(s)", name: "initial", widget: "string" }
             ] }
 
   - name: "faqs"
