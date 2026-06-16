@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════
    TUTORING4ALL — SHARED STYLESHEET
-   Brand: Dark Navy #0d2137 / Blue #1a4f82 / Orange #e2462f
+   Brand: Dark Navy #0d2137 / Blue #1a4f82 / Gold #f5a623
 ═══════════════════════════════════════════════ */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -12,8 +12,8 @@
   --blue-mid:    #2567a4;
   --blue-light:  #3b82c4;
   --teal:        #1a9dc4;
-  --gold:        #e2462f;
-  --gold-light:  #fde2dc;
+  --gold:        #f5a623;
+  --gold-light:  #fef3c7;
   --brand-orange: #e2462f;
   --white:       #ffffff;
   --gray-50:     #f8fafc;
