@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Tutoring4All Sydney</title>
+  <meta name="description" content="Get in touch with Tutoring4All Sydney. Enquire about private tutoring for your child — in-home, library or online. Call 0490 423 713." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .contact-grid { display:grid; grid-template-columns:1fr 1.7fr; gap:56px; align-items:start; }
+    .contact-info { display:flex; flex-direction:column; gap:14px; }
+    .ci-card {
+      background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:20px 22px;
+      display:flex; align-items:center; gap:16px; transition:box-shadow .2s;
+    }
+    .ci-card:hover { box-shadow:var(--shadow-md); }
+    .ci-icon { width:44px; height:44px; border-radius:11px; background:linear-gradient(135deg,var(--blue),var(--teal)); display:flex; align-items:center; justify-content:center; font-size:1.1rem; color:var(--white); flex-shrink:0; }
+    .ci-card h4 { font-size:.78rem; font-weight:700; text-transform:uppercase; letter-spacing:.5px; color:var(--gray-400); margin-bottom:3px; }
+    .ci-card a, .ci-card p { font-size:.95rem; font-weight:600; color:var(--navy); text-decoration:none; }
+    .ci-card a:hover { color:var(--blue-mid); }
+
+    .form-card {
+      background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-lg); padding:44px;
+      box-shadow:var(--shadow-lg);
+    }
+    .form-card h2 { font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:6px; }
+    .form-card .sub { font-size:.9rem; color:var(--gray-600); margin-bottom:32px; }
+    .form-submit { width:100%; padding:15px; font-size:1rem; margin-top:8px; }
+
+    .map-placeholder {
+      background:linear-gradient(135deg,var(--navy),var(--navy-mid)); border-radius:var(--radius-lg);
+      height:220px; display:flex; flex-direction:column; align-items:center; justify-content:center;
+      color:rgba(255,255,255,.7); font-size:.9rem; gap:10px; margin-top:16px;
+    }
+    .map-placeholder .pin { font-size:2rem; }
+
+    @media(max-width:1024px){ .contact-grid{grid-template-columns:1fr; gap:40px;} }
+    @media(max-width:768px){ .form-card{padding:28px 24px;} }
+  </style>
+</head>
+<body>
+<script src="shared.js"></script>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">Home</a> › Contact</p>
+    <h1>Contact Us</h1>
+    <p>Ready to get started? Fill in the form and we'll be in touch within 24 hours.</p>
+  </div>
+</div>
+
+<section style="background:var(--gray-50);">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div>
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title" style="font-size:1.8rem;">We'd Love to Hear From You</h2>
+        <p style="color:var(--gray-600);line-height:1.7;margin-bottom:28px;font-size:.95rem;">Whether you're ready to book or just have a question, we're here to help. No obligation — just a friendly chat about your child's needs.</p>
+        <div class="contact-info">
+          <div class="ci-card"><div class="ci-icon">📞</div><div><h4>Phone</h4><a href="tel:0490423713">0490 423 713</a></div></div>
+          <div class="ci-card"><div class="ci-icon">✉️</div><div><h4>Email</h4><a href="mailto:info@Tutoring4All.com.au">info@Tutoring4All.com.au</a></div></div>
+          <div class="ci-card"><div class="ci-icon">📍</div><div><h4>Head Office</h4><p>Five Dock, NSW, Sydney</p></div></div>
+          <div class="ci-card"><div class="ci-icon">📸</div><div><h4>Social Media</h4><a href="https://www.instagram.com/Tutoring4All" target="_blank" rel="noopener">@Tutoring4All on Instagram & Facebook</a></div></div>
+        </div>
+        <div class="map-placeholder">
+          <span class="pin">📍</span>
+          <span>Five Dock, Inner West Sydney, NSW</span>
+          <span style="font-size:.8rem;opacity:.6;">Serving all Inner West & Greater Sydney suburbs</span>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h2>Book a Free Consultation</h2>
+        <p class="sub">Tell us about your child and we'll match them with the perfect tutor.</p>
+        <form data-ajax action="mailto:info@Tutoring4All.com.au" method="POST">
+          <div class="form-row">
+            <div class="form-group"><label>Parent / Guardian Name <span class="required">*</span></label><input type="text" name="parent_name" placeholder="Your full name" required /></div>
+            <div class="form-group"><label>Phone Number <span class="required">*</span></label><input type="tel" name="phone" placeholder="04xx xxx xxx" required /></div>
+          </div>
+          <div class="form-group"><label>Email Address <span class="required">*</span></label><input type="email" name="email" placeholder="your@email.com" required /></div>
+          <div class="form-row">
+            <div class="form-group"><label>Student's Name <span class="required">*</span></label><input type="text" name="student_name" placeholder="Student's first name" required /></div>
+            <div class="form-group"><label>Student's Age & Year Group <span class="required">*</span></label>
+              <select name="year_group" required>
+                <option value="">Select year group...</option>
+                <option>Kindergarten</option><option>Year 1</option><option>Year 2</option>
+                <option>Year 3</option><option>Year 4</option><option>Year 5</option>
+                <option>Year 6</option><option>Year 7</option><option>Year 8</option>
+                <option>Year 9</option><option>Year 10</option><option>Year 11</option>
+                <option>Year 12 (HSC)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group"><label>Subject(s) / Service Required <span class="required">*</span></label>
+            <select name="subject" required>
+              <option value="">Select a service...</option>
+              <option>English</option><option>Maths</option><option>English & Maths</option>
+              <option>HSC Subject Support</option><option>NAPLAN Preparation</option>
+              <option>Selective School Preparation</option><option>OC (Opportunity Class) Preparation</option>
+              <option>Online Tutoring / Resources</option><option>Piano Lessons</option>
+              <option>Multiple Subjects / Other</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Suburb / Location <span class="required">*</span></label><input type="text" name="suburb" placeholder="e.g. Five Dock, Drummoyne, Strathfield..." required /></div>
+          <div class="form-group"><label>Preferred Tutoring Format</label>
+            <select name="format">
+              <option>In-Home (tutor comes to us)</option>
+              <option>Library / Neutral Location</option>
+              <option>Online (Zoom/Teams)</option>
+              <option>No preference</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Preferred Contact Method</label>
+            <select name="contact_method">
+              <option>Phone call</option><option>Email</option><option>Either is fine</option>
+            </select>
+          </div>
+          <div class="form-group"><label>How Did You Hear About Us?</label>
+            <select name="referral">
+              <option value="">Select...</option>
+              <option>Google Search</option><option>Facebook</option><option>Instagram</option>
+              <option>Word of mouth / referral</option><option>School recommendation</option><option>Other</option>
+            </select>
+          </div>
+          <div class="form-group"><label>How Can We Help?</label>
+            <textarea name="message" placeholder="Tell us about your child's goals, current challenges, and anything else that would help us match them with the right tutor..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-blue form-submit">Send Enquiry →</button>
+          <p class="form-note" style="text-align:center;margin-top:12px;">We'll respond within 24 hours. No obligation — just a friendly conversation.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="nav.js"></script>
+</body>
+</html>

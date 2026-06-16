@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>High School & HSC Tutoring | Tutoring4All Sydney</title>
+  <meta name="description" content="Expert high school and HSC tutoring in Sydney for Years 7–12. All subjects covered. In-home, library, and online sessions available." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .year-tabs { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:40px; }
+    .year-tab { padding:10px 22px; border-radius:100px; border:2px solid var(--gray-200); background:var(--white); font-size:.88rem; font-weight:600; color:var(--gray-600); cursor:pointer; transition:all .2s; }
+    .year-tab.active, .year-tab:hover { border-color:var(--blue-mid); background:var(--blue-mid); color:var(--white); }
+
+    .subjects-block { display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; }
+    .subj-block { background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:24px; }
+    .subj-block h4 { font-size:.9rem; font-weight:700; color:var(--navy); margin-bottom:10px; padding-bottom:8px; border-bottom:2px solid var(--gray-100); }
+    .subj-block ul { list-style:none; display:flex; flex-direction:column; gap:6px; }
+    .subj-block li { font-size:.83rem; color:var(--gray-600); display:flex; align-items:center; gap:7px; }
+    .subj-block li::before { content:'·'; color:var(--teal); font-size:1.2rem; flex-shrink:0; }
+
+    .hsc-features { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .hsc-feat { display:flex; gap:14px; align-items:flex-start; padding:22px; background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); }
+    .hsc-icon { width:40px; height:40px; border-radius:10px; background:linear-gradient(135deg,var(--blue),var(--teal)); display:flex; align-items:center; justify-content:center; font-size:1rem; color:var(--white); flex-shrink:0; }
+    .hsc-feat h4 { font-size:.93rem; font-weight:700; color:var(--navy); margin-bottom:4px; }
+    .hsc-feat p { font-size:.83rem; color:var(--gray-600); line-height:1.6; }
+
+    .atar-box { background:var(--gradient-hero); border-radius:var(--radius-lg); padding:44px; color:var(--white); display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; }
+    .atar-box h2 { font-family:'Playfair Display',serif; font-size:1.8rem; font-weight:800; margin-bottom:12px; }
+    .atar-box p { color:rgba(255,255,255,.72); line-height:1.7; font-size:.95rem; }
+    .atar-stats { display:flex; flex-direction:column; gap:20px; }
+    .atar-stat { background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.12); border-radius:12px; padding:16px 20px; }
+    .atar-stat strong { display:block; font-size:1.6rem; font-weight:800; color:var(--gold); }
+    .atar-stat span { font-size:.82rem; color:rgba(255,255,255,.6); }
+
+    @media(max-width:1024px){ .subjects-block{grid-template-columns:1fr 1fr;} .atar-box{grid-template-columns:1fr;} }
+    @media(max-width:768px){ .subjects-block,.hsc-features{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+<script src="shared.js"></script>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">Home</a> › <a href="home-tutoring-services.html">Services</a> › High School</p>
+    <h1>High School & HSC Tutoring</h1>
+    <p>Comprehensive support for Years 7–12 — from subject mastery to achieving your best possible HSC results.</p>
+  </div>
+</div>
+
+<!-- YEARS 7–10 -->
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">Years 7–10</span>
+      <h2 class="section-title">Junior High School Support</h2>
+      <p class="section-sub">Strong performance in Years 7–10 sets the foundation for HSC success. We help students stay on track, build subject knowledge, and develop the study skills they'll need for senior school.</p>
+    </div>
+    <div class="subjects-block">
+      <div class="subj-block reveal">
+        <h4>English</h4>
+        <ul>
+          <li>Text analysis and essay writing</li>
+          <li>Reading comprehension</li>
+          <li>Creative and persuasive writing</li>
+          <li>Grammar and vocabulary</li>
+        </ul>
+      </div>
+      <div class="subj-block reveal">
+        <h4>Mathematics</h4>
+        <ul>
+          <li>Algebra and equations</li>
+          <li>Geometry and measurement</li>
+          <li>Statistics and probability</li>
+          <li>Assessment preparation</li>
+        </ul>
+      </div>
+      <div class="subj-block reveal">
+        <h4>Science</h4>
+        <ul>
+          <li>Biology fundamentals</li>
+          <li>Chemistry basics</li>
+          <li>Physics concepts</li>
+          <li>Scientific writing</li>
+        </ul>
+      </div>
+      <div class="subj-block reveal">
+        <h4>HSIE</h4>
+        <ul>
+          <li>Geography</li>
+          <li>History</li>
+          <li>Commerce</li>
+          <li>PDHPE</li>
+        </ul>
+      </div>
+      <div class="subj-block reveal">
+        <h4>Creative Arts</h4>
+        <ul>
+          <li>Drama</li>
+          <li>Music</li>
+          <li>Visual Arts support</li>
+        </ul>
+      </div>
+      <div class="subj-block reveal">
+        <h4>Study Skills</h4>
+        <ul>
+          <li>Note-taking techniques</li>
+          <li>Study timetable creation</li>
+          <li>Exam preparation strategies</li>
+          <li>Time management</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HSC -->
+<section class="bg-gray">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">Years 11–12</span>
+      <h2 class="section-title">Specialist HSC Support</h2>
+      <p class="section-sub">Our HSC tutors are experts in their subjects and deeply familiar with NESA requirements, assessment weighting, and what examiners are looking for.</p>
+    </div>
+
+    <div class="atar-box reveal" style="margin-bottom:40px;">
+      <div>
+        <h2>We Help Students Achieve the ATAR They Deserve</h2>
+        <p>The HSC is one of the most important academic challenges your child will face. Our specialist tutors provide targeted support across all Preliminary and HSC courses — helping students truly understand their content, not just memorise it.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Book HSC Tutoring →</a>
+      </div>
+      <div class="atar-stats">
+        <div class="atar-stat"><strong>Year 11</strong><span>Preliminary course support — build the foundations</span></div>
+        <div class="atar-stat"><strong>Year 12</strong><span>HSC courses + trial exam preparation</span></div>
+        <div class="atar-stat"><strong>All subjects</strong><span>From English Standard to Maths Extension 2</span></div>
+      </div>
+    </div>
+
+    <h3 style="font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:20px;">HSC Subjects We Cover</h3>
+    <div class="subjects-block">
+      <div class="subj-block reveal">
+        <h4>English</h4>
+        <ul>
+          <li>English Standard</li>
+          <li>English Advanced</li>
+          <li>English Extension 1 & 2</li>
+        </ul>
+      </div>
+      <div class="subj-block reveal">
+        <h4>Mathematics</h4>
+        <ul>
+          <li>Mathematics Standard</li>
+          <li>Mathematics Advanced</li>
+          <li>Mathematics Extension 1 & 2</li>
+        </ul>
+      </div>
+      <div class="subj-block reveal">
+        <h4>Sciences</h4>
+        <ul>
+          <li>Biology</li>
+          <li>Chemistry</li>
+          <li>Physics</li>
+        </ul>
+      </div>
+      <div class="subj-block reveal">
+        <h4>Humanities</h4>
+        <ul>
+          <li>Business Studies</li>
+          <li>Legal Studies</li>
+          <li>PDHPE</li>
+          <li>Studies of Religion I & II</li>
+        </ul>
+      </div>
+      <div class="subj-block reveal">
+        <h4>Creative Arts</h4>
+        <ul>
+          <li>Drama</li>
+          <li>Music</li>
+        </ul>
+      </div>
+      <div class="subj-block reveal">
+        <h4>HSC Exam Prep</h4>
+        <ul>
+          <li>Trial exam preparation</li>
+          <li>Past paper practice</li>
+          <li>Assessment weighting guidance</li>
+          <li>Band 6 essay techniques</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US FOR HSC -->
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-header center">
+      <span class="section-label">Our Approach</span>
+      <h2 class="section-title">More Than Just Content — We Build Exam-Ready Students</h2>
+    </div>
+    <div class="hsc-features">
+      <div class="hsc-feat reveal"><div class="hsc-icon">📋</div><div><h4>Syllabus-Aligned Teaching</h4><p>Every session is mapped directly to the NESA HSC syllabus so students cover exactly what's assessed — nothing more, nothing less.</p></div></div>
+      <div class="hsc-feat reveal"><div class="hsc-icon">📝</div><div><h4>Past Paper Practice</h4><p>Extensive practice with past HSC exams to build exam confidence, timing, and familiarity with question styles.</p></div></div>
+      <div class="hsc-feat reveal"><div class="hsc-icon">✍️</div><div><h4>Essay & Response Feedback</h4><p>Detailed written feedback on student responses — not just a mark, but specific guidance on how to improve.</p></div></div>
+      <div class="hsc-feat reveal"><div class="hsc-icon">🧠</div><div><h4>Study Strategy Coaching</h4><p>We help students develop effective study habits, time management skills, and mental resilience for the HSC period.</p></div></div>
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <a href="contact.html" class="btn btn-blue btn-lg">Book a HSC Tutor →</a>
+    </div>
+  </div>
+</section>
+
+<script src="nav.js"></script>
+</body>
+</html>

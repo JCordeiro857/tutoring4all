@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutoring4All | Private In-Home & Online Tutoring Across Sydney</title>
+  <meta name="description" content="Expert private tutoring for Kindergarten to Year 12 across Sydney. In-home and online options. WWCC certified tutors. Trusted since 2013." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ── HOME HERO ── */
+    .hero {
+      background: var(--gradient-hero);
+      padding: 100px 24px 120px;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-blob { position: absolute; border-radius: 50%; filter: blur(80px); pointer-events: none; }
+    .hb1 { width: 520px; height: 520px; background: rgba(37,103,164,0.3); top: -150px; right: -120px; }
+    .hb2 { width: 360px; height: 360px; background: rgba(245,166,35,0.1); bottom: -80px; left: -80px; }
+    .hero-inner {
+      max-width: 1200px; margin: 0 auto; position: relative; z-index: 1;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+    }
+    .hero-logo { height: 110px; width: auto; margin-bottom: 24px; display: block; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(245,166,35,0.15); border: 1px solid rgba(245,166,35,0.3);
+      color: var(--gold); padding: 7px 18px; border-radius: 100px;
+      font-size: 0.8rem; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 800;
+      color: var(--white); line-height: 1.13; margin-bottom: 20px;
+    }
+    .hero h1 em { font-style: normal; color: var(--gold); }
+    .hero p { font-size: 1.08rem; color: rgba(255,255,255,0.72); margin-bottom: 36px; line-height: 1.7; }
+    .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-stats { display: flex; gap: 36px; margin-top: 48px; flex-wrap: wrap; }
+    .hero-stat strong { display: block; font-size: 2rem; font-weight: 800; color: var(--gold); line-height: 1; }
+    .hero-stat span { font-size: 0.8rem; color: rgba(255,255,255,0.55); margin-top: 3px; }
+
+    /* service cards on hero */
+    .hero-cards { display: flex; flex-direction: column; gap: 14px; }
+    .hero-card {
+      background: rgba(255,255,255,0.07);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius); padding: 18px 22px;
+      display: flex; align-items: center; gap: 16px;
+      transition: transform .3s, background .3s;
+    }
+    .hero-card:hover { transform: translateX(6px); background: rgba(255,255,255,0.12); }
+    .hc-icon {
+      width: 46px; height: 46px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; flex-shrink: 0;
+    }
+    .hero-card h3 { font-size: 0.92rem; font-weight: 700; color: var(--white); margin-bottom: 2px; }
+    .hero-card p { font-size: 0.78rem; color: rgba(255,255,255,0.55); }
+    .hc1 { background: rgba(37,103,164,0.4); }
+    .hc2 { background: rgba(245,166,35,0.35); }
+    .hc3 { background: rgba(26,157,196,0.4); }
+    .hc4 { background: rgba(16,185,129,0.35); }
+    .hc5 { background: rgba(168,85,247,0.35); }
+
+    /* ── SERVICES GRID ── */
+    .services-grid {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 24px;
+    }
+    .svc-card {
+      background: var(--white); border: 1px solid var(--gray-200);
+      border-radius: var(--radius-lg); padding: 36px 30px;
+      position: relative; overflow: hidden; transition: all .3s;
+    }
+    .svc-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 4px; border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+    .svc-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-xl); border-color: transparent; }
+    .s1::before { background: linear-gradient(90deg,#1a4f82,#2567a4); }
+    .s2::before { background: linear-gradient(90deg,#f5a623,#ef4444); }
+    .s3::before { background: linear-gradient(90deg,#10b981,#059669); }
+    .s4::before { background: linear-gradient(90deg,#8b5cf6,#6d28d9); }
+    .s5::before { background: linear-gradient(90deg,#ec4899,#db2777); }
+    .s6::before { background: linear-gradient(90deg,#1a9dc4,#0284c7); }
+    .svc-icon { width: 54px; height: 54px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 18px; }
+    .s1 .svc-icon { background:#eff6ff; } .s2 .svc-icon { background:#fffbeb; }
+    .s3 .svc-icon { background:#ecfdf5; } .s4 .svc-icon { background:#f5f3ff; }
+    .s5 .svc-icon { background:#fdf2f8; } .s6 .svc-icon { background:#f0f9ff; }
+    .svc-card h3 { font-size: 1.08rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+    .svc-card p { font-size: 0.88rem; color: var(--gray-600); line-height: 1.65; margin-bottom: 20px; }
+    .svc-card a { font-size: 0.85rem; font-weight: 600; text-decoration: none; }
+    .s1 a{color:#1a4f82;} .s2 a{color:#d97706;} .s3 a{color:#059669;}
+    .s4 a{color:#6d28d9;} .s5 a{color:#db2777;} .s6 a{color:#0284c7;}
+    .svc-card a:hover { text-decoration: underline; }
+
+    /* ── ABOUT GRID ── */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .about-features { display: flex; flex-direction: column; gap: 20px; }
+    .feat-item {
+      display: flex; gap: 16px; align-items: flex-start;
+      padding: 22px; background: var(--white);
+      border: 1px solid var(--gray-200); border-radius: var(--radius);
+      transition: all .25s;
+    }
+    .feat-item:hover { border-color: var(--teal); box-shadow: var(--shadow-md); }
+    .feat-icon {
+      width: 42px; height: 42px; border-radius: 11px; flex-shrink: 0;
+      background: linear-gradient(135deg,var(--blue),var(--teal));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; color: var(--white);
+    }
+    .feat-item h4 { font-size: 0.97rem; font-weight: 700; color: var(--navy); margin-bottom: 5px; }
+    .feat-item p { font-size: 0.86rem; color: var(--gray-600); line-height: 1.6; }
+    .about-vis-card {
+      background: var(--gradient-hero); border-radius: var(--radius-lg);
+      padding: 44px; color: var(--white); position: relative; overflow: hidden;
+    }
+    .about-vis-card::after {
+      content: ''; position: absolute; width: 280px; height: 280px;
+      border-radius: 50%; background: rgba(255,255,255,0.05);
+      top: -80px; right: -80px;
+    }
+    .big-num { font-size: 5rem; font-weight: 800; color: var(--gold); line-height: 1; }
+    .about-vis-card h3 { font-size: 1.35rem; font-weight: 700; margin: 8px 0 12px; }
+    .about-vis-card p { opacity: .72; line-height: 1.65; font-size: 0.93rem; }
+    .mini-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; }
+    .mini-stat {
+      background: var(--white); border: 1px solid var(--gray-200);
+      border-radius: var(--radius); padding: 18px; text-align: center;
+    }
+    .mini-stat .n { font-size: 1.7rem; font-weight: 800; color: var(--blue-mid); }
+    .mini-stat small { font-size: 0.78rem; color: var(--gray-600); display: block; margin-top: 3px; }
+
+    /* ── AREAS ── */
+    .areas-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .area-card {
+      background: var(--gray-50); border: 1px solid var(--gray-200);
+      border-radius: var(--radius-lg); padding: 32px;
+    }
+    .area-card h3 {
+      font-size: 1.1rem; font-weight: 700; color: var(--navy);
+      margin-bottom: 18px; display: flex; align-items: center; gap: 10px;
+    }
+    .area-badge {
+      width: 30px; height: 30px; border-radius: 8px; background: var(--blue);
+      display: flex; align-items: center; justify-content: center; font-size: 0.85rem;
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip {
+      padding: 5px 13px; background: var(--white); border: 1px solid var(--gray-200);
+      border-radius: 100px; font-size: 0.8rem; color: var(--gray-600); font-weight: 500;
+      transition: all .2s; cursor: default;
+    }
+    .chip:hover { border-color: var(--blue-mid); color: var(--blue-mid); background: #eff6ff; }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .testi-card {
+      background: var(--white); border: 1px solid var(--gray-200);
+      border-radius: var(--radius); padding: 28px;
+      transition: all .3s;
+    }
+    .testi-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); border-color: transparent; }
+    .stars { color: var(--gold); font-size: 1rem; margin-bottom: 14px; }
+    .testi-card p { font-size: 0.9rem; color: var(--gray-600); line-height: 1.7; font-style: italic; margin-bottom: 18px; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-avatar {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: linear-gradient(135deg,var(--blue),var(--teal));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.9rem; font-weight: 700; color: var(--white);
+    }
+    .testi-author strong { font-size: 0.88rem; color: var(--navy); display: block; }
+    .testi-author span { font-size: 0.78rem; color: var(--gray-400); }
+
+    /* ── FAQ HOME ── */
+    #faqs { background: var(--gray-50); }
+    .faq-cols { display: grid; grid-template-columns: 1fr 2fr; gap: 60px; align-items: start; }
+    .faq-intro p { font-size: 0.95rem; color: var(--gray-600); line-height: 1.7; margin-bottom: 24px; }
+    .faq-sub-links { display: flex; flex-direction: column; gap: 10px; }
+    .faq-sub-link {
+      display: flex; align-items: center; gap: 10px;
+      padding: 12px 16px; background: var(--white);
+      border: 1px solid var(--gray-200); border-radius: 10px;
+      font-size: 0.86rem; font-weight: 600; color: var(--blue);
+      text-decoration: none; transition: all .2s;
+    }
+    .faq-sub-link:hover { border-color: var(--blue-mid); box-shadow: var(--shadow-sm); }
+
+    /* ── CTA BANNER ── */
+    .cta-banner {
+      background: var(--gradient-hero); padding: 88px 24px;
+      text-align: center; position: relative; overflow: hidden;
+    }
+    .cta-banner::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(245,166,35,0.12), transparent 65%);
+    }
+    .cta-banner-inner { max-width: 680px; margin: 0 auto; position: relative; z-index: 1; }
+    .cta-banner .section-title { color: var(--white); }
+    .cta-banner p { color: rgba(255,255,255,0.68); font-size: 1.02rem; margin-bottom: 36px; line-height: 1.7; }
+    .cta-banner-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    @media (max-width: 1024px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .about-grid { grid-template-columns: 1fr; gap: 48px; }
+      .testimonials-grid { grid-template-columns: 1fr 1fr; }
+      .faq-cols { grid-template-columns: 1fr; gap: 40px; }
+    }
+    @media (max-width: 768px) {
+      .hero { padding: 68px 24px 80px; }
+      .services-grid, .areas-grid, .testimonials-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<script src="shared.js"></script>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-blob hb1"></div>
+  <div class="hero-blob hb2"></div>
+  <div class="hero-inner">
+    <div>
+      <img src="TUTORING-4ALL-transaparent-800x200px-WHITE-writing.png" alt="Tutoring4All" class="hero-logo fade-up" />
+      <div class="hero-badge fade-up">★ Trusted by Sydney Families Since 2013</div>
+      <h1 class="fade-up d1">Experienced Tutors.<br/>Personalised Support.<br/><em>Proven Results.</em></h1>
+      <p class="fade-up d2">Private in-home and online tutoring for Kindergarten to Year 12 (HSC) across Sydney. WWCC certified tutors aligned to the NSW curriculum.</p>
+      <div class="hero-buttons fade-up d3">
+        <a href="contact.html" class="btn btn-primary btn-lg">Enquire Now →</a>
+        <a href="home-tutoring-services.html" class="btn btn-outline btn-lg">Our Services</a>
+      </div>
+      <div class="hero-stats fade-up d4">
+        <div class="hero-stat"><strong>10+</strong><span>Years experience</span></div>
+        <div class="hero-stat"><strong>K–12</strong><span>All year groups</span></div>
+        <div class="hero-stat"><strong>WWCC</strong><span>Certified tutors</span></div>
+        <div class="hero-stat"><strong>Inner West</strong><span>& Greater Sydney</span></div>
+      </div>
+    </div>
+    <div class="hero-cards fade-up d2">
+      <a href="primary-school-tutoring.html" class="hero-card" style="text-decoration:none;">
+        <div class="hc-icon hc1">📚</div>
+        <div><h3>Primary School Tutoring</h3><p>Years K–6 · English, Maths & all subjects</p></div>
+      </a>
+      <a href="high-school-tutoring.html" class="hero-card" style="text-decoration:none;">
+        <div class="hc-icon hc2">🎓</div>
+        <div><h3>High School & HSC Support</h3><p>Years 7–12 · HSC specialist support</p></div>
+      </a>
+      <a href="index.html#faqs" class="hero-card" style="text-decoration:none;">
+        <div class="hc-icon hc3">📝</div>
+        <div><h3>Exam Preparation</h3><p>NAPLAN · Selective · OC Tests</p></div>
+      </a>
+      <a href="online-resources.html" class="hero-card" style="text-decoration:none;">
+        <div class="hc-icon hc4">💻</div>
+        <div><h3>Online Tutoring & Resources</h3><p>HSC notes · essays · study guides</p></div>
+      </a>
+      <a href="home-tutoring-services.html" class="hero-card" style="text-decoration:none;">
+        <div class="hc-icon hc5">🎹</div>
+        <div><h3>Piano Lessons</h3><p>Beginner to advanced · AMEB prep</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item"><span class="ti-icon">✓</span> WWCC Certified Tutors</div>
+    <div class="trust-item"><span class="ti-icon">✓</span> NSW Curriculum Aligned</div>
+    <div class="trust-item"><span class="ti-icon">✓</span> In-Home & Online Options</div>
+    <div class="trust-item"><span class="ti-icon">✓</span> No Lock-In Contracts</div>
+    <div class="trust-item"><span class="ti-icon">✓</span> Progress Reports Every Session</div>
+    <div class="trust-item"><span class="ti-icon">✓</span> Serving Sydney Since 2013</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title">Tutoring for Every Stage of Learning</h2>
+      <p class="section-sub">From building strong foundations in primary school to mastering the HSC — our qualified tutors provide personalised, one-on-one support.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card s1 reveal">
+        <div class="svc-icon">📚</div>
+        <h3>Primary School Tutoring</h3>
+        <p>Tailored support for Years K–6 in English, Maths and core subjects. We build confidence and strong foundations through guided reading, spelling, comprehension and numeracy.</p>
+        <a href="primary-school-tutoring.html">Learn more →</a>
+      </div>
+      <div class="svc-card s2 reveal">
+        <div class="svc-icon">🎓</div>
+        <h3>High School & HSC Support</h3>
+        <p>Comprehensive tutoring for Years 7–12 across all subjects. Specialist Year 11 & 12 HSC support to help students maximise their results and ATAR.</p>
+        <a href="high-school-tutoring.html">Learn more →</a>
+      </div>
+      <div class="svc-card s3 reveal">
+        <div class="svc-icon">📝</div>
+        <h3>Exam Preparation</h3>
+        <p>Targeted preparation for NAPLAN, Opportunity Class (OC) and Selective High School entry tests, with proven strategies and tailored practice materials.</p>
+        <a href="home-tutoring-services.html">Learn more →</a>
+      </div>
+      <div class="svc-card s4 reveal">
+        <div class="svc-icon">💻</div>
+        <h3>Online Resources</h3>
+        <p>Essay feedback and marking, HSC study notes, creative writing guides, study timetables and more — accessible anywhere, anytime.</p>
+        <a href="online-resources.html">Learn more →</a>
+      </div>
+      <div class="svc-card s5 reveal">
+        <div class="svc-icon">🎹</div>
+        <h3>Piano Lessons</h3>
+        <p>In-home piano tuition for all ages and skill levels — from complete beginners through to advanced AMEB examination preparation.</p>
+        <a href="home-tutoring-services.html">Learn more →</a>
+      </div>
+      <div class="svc-card s6 reveal">
+        <div class="svc-icon">👥</div>
+        <h3>Meet Our Tutors</h3>
+        <p>Our hand-picked, WWCC-certified team of educators are passionate about making a real difference. Many were once students who needed extra support themselves.</p>
+        <a href="our-sydney-tutoring-team.html">Meet the team →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="bg-gray">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div>
+        <span class="section-label">Why Tutoring4All</span>
+        <h2 class="section-title">A Tutoring Service You Can Trust</h2>
+        <p class="section-sub" style="margin-bottom:36px;">Founded by Cinzia Favotto in 2013, we've helped hundreds of Sydney students build confidence, improve grades, and achieve their goals.</p>
+        <div class="about-features">
+          <div class="feat-item reveal"><div class="feat-icon">🛡️</div><div><h4>WWCC Verified Educators</h4><p>Every tutor holds a current Working With Children Check — your child's safety is always our first priority.</p></div></div>
+          <div class="feat-item reveal"><div class="feat-icon">🎯</div><div><h4>Personalised Learning Plans</h4><p>Sessions tailored to your child's specific learning style, current level, and academic goals — never one-size-fits-all.</p></div></div>
+          <div class="feat-item reveal"><div class="feat-icon">📋</div><div><h4>Progress Reports Every Session</h4><p>Detailed reports after every session documenting what was covered, improvements observed, and upcoming lesson plans.</p></div></div>
+          <div class="feat-item reveal"><div class="feat-icon">🏠</div><div><h4>We Come to You</h4><p>No travel fees. Tutors come to your home, local library, or a convenient location — or connect online via Zoom.</p></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="about-vis-card reveal">
+          <div class="big-num">10+</div>
+          <h3>Years of Consistent Outcomes</h3>
+          <p>Since 2013, Tutoring4All has helped hundreds of Sydney students build confidence, improve grades, and achieve their academic goals — from primary school right through to HSC.</p>
+        </div>
+        <div class="mini-stats">
+          <div class="mini-stat reveal"><div class="n">K–12</div><small>All year groups covered</small></div>
+          <div class="mini-stat reveal"><div class="n">100%</div><small>WWCC certified tutors</small></div>
+          <div class="mini-stat reveal"><div class="n">$0</div><small>Travel fees charged</small></div>
+          <div class="mini-stat reveal"><div class="n">NSW</div><small>Curriculum aligned</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-header center">
+      <span class="section-label">What Families Say</span>
+      <h2 class="section-title">Trusted by Sydney Families</h2>
+      <p class="section-sub">"Education is the most powerful weapon which you can use to change the world." — Nelson Mandela</p>
+    </div>
+    <div class="testimonials-grid"><!-- populated by content-render.js from content/testimonials.json --></div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section class="bg-gray">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">Where We Tutor</span>
+      <h2 class="section-title">We Come to You Across Sydney</h2>
+      <p class="section-sub">Our tutors travel to homes and libraries throughout Inner West Sydney and greater Sydney. Online tutoring is available everywhere.</p>
+    </div>
+    <div class="areas-grid">
+      <div class="area-card reveal">
+        <h3><span class="area-badge">📍</span> Inner West Sydney</h3>
+        <div class="chips">
+          <span class="chip">Five Dock</span><span class="chip">Drummoyne</span>
+          <span class="chip">Haberfield</span><span class="chip">Leichhardt</span>
+          <span class="chip">Croydon</span><span class="chip">Burwood</span>
+          <span class="chip">Marrickville</span><span class="chip">Newtown</span>
+          <span class="chip">Balmain</span><span class="chip">Rozelle</span>
+          <span class="chip">Ashfield</span><span class="chip">Concord</span>
+          <span class="chip">Canada Bay</span><span class="chip">Rhodes</span>
+        </div>
+      </div>
+      <div class="area-card reveal">
+        <h3><span class="area-badge">🗺️</span> Greater Sydney</h3>
+        <div class="chips">
+          <span class="chip">Hurstville</span><span class="chip">Belmore</span>
+          <span class="chip">Ryde</span><span class="chip">Strathfield</span>
+          <span class="chip">Homebush</span><span class="chip">Lidcombe</span>
+          <span class="chip">Auburn</span><span class="chip">Parramatta</span>
+          <span class="chip">North Sydney</span><span class="chip">Chatswood</span>
+          <span class="chip">Epping</span><span class="chip">Hurstville</span>
+          <span class="chip">+ surrounding areas</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faqs" class="bg-gray" style="padding-top:0;">
+  <div class="section-inner">
+    <div style="height:1px;background:var(--gray-200);margin-bottom:80px;"></div>
+    <div class="faq-cols">
+      <div>
+        <span class="section-label">FAQs</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="faq-intro" style="font-size:.95rem;color:var(--gray-600);line-height:1.7;margin-bottom:24px;">Have a question? We've answered the most common ones below. If you don't see what you're looking for, don't hesitate to get in touch.</p>
+        <div class="faq-sub-links">
+          <a href="cancellation-policy.html" class="faq-sub-link">📋 Cancellation Policy</a>
+          <a href="code-of-conduct.html" class="faq-sub-link">✅ Code of Conduct</a>
+          <a href="child-protection-policy.html" class="faq-sub-link">🛡️ Child Protection Policy</a>
+          <a href="contact.html" class="faq-sub-link" style="color:var(--gold);">💬 Still have a question? Contact us</a>
+        </div>
+      </div>
+      <div class="faq-list"><!-- populated by content-render.js from content/faqs.json --></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<div class="cta-banner">
+  <div class="cta-banner-inner">
+    <span class="section-label" style="color:var(--gold);">Get Started Today</span>
+    <h2 class="section-title">Ready to Unlock Your Child's Potential?</h2>
+    <p>Get in touch and we'll match your child with the perfect tutor. No obligation — just a friendly conversation about your needs.</p>
+    <div class="cta-banner-btns">
+      <a href="contact.html" class="btn btn-primary btn-lg">Enquire Now →</a>
+      <a href="become-a-tutor.html" class="btn btn-outline btn-lg">Become a Tutor</a>
+    </div>
+  </div>
+</div>
+
+<script src="nav.js"></script>
+<script src="content-render.js"></script>
+</body>
+</html>

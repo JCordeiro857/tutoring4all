@@ -1,0 +1,33 @@
+[build]
+  publish = "."
+  command = ""
+
+[[redirects]]
+  from = "/blog-mid-term-pressure"
+  to = "/blog-post.html?slug=mid-term-pressure"
+  status = 301
+
+[[redirects]]
+  from = "/blog-mid-term-pressure.html"
+  to = "/blog-post.html?slug=mid-term-pressure"
+  status = 301
+
+[[redirects]]
+  from = "/blog-term2-best-time.html"
+  to = "/blog-post.html?slug=term2-best-time"
+  status = 301
+
+[[redirects]]
+  from = "/blog-fresh-start-term2.html"
+  to = "/blog-post.html?slug=fresh-start-term2"
+  status = 301
+
+[[redirects]]
+  from = "/blog-meet-daniel.html"
+  to = "/blog-post.html?slug=meet-daniel"
+  status = 301
+
+[[redirects]]
+  from = "/blog-january-reset.html"
+  to = "/blog-post.html?slug=january-reset"
+  status = 301

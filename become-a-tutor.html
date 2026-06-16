@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Become a Tutor | Tutoring4All Sydney</title>
+  <meta name="description" content="Join the Tutoring4All team as a private tutor in Sydney. Apply now — flexible hours, competitive rates, and meaningful work." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .perks-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .perk-card { background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:28px; text-align:center; transition:all .25s; }
+    .perk-card:hover { border-color:var(--blue-mid); box-shadow:var(--shadow-md); transform:translateY(-3px); }
+    .perk-icon { font-size:2rem; margin-bottom:12px; }
+    .perk-card h3 { font-size:.97rem; font-weight:700; color:var(--navy); margin-bottom:8px; }
+    .perk-card p { font-size:.84rem; color:var(--gray-600); line-height:1.6; }
+
+    .app-form-card { background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-lg); padding:44px; box-shadow:var(--shadow-lg); }
+    .app-form-card h2 { font-size:1.4rem; font-weight:800; color:var(--navy); margin-bottom:6px; }
+    .app-form-card .sub { font-size:.9rem; color:var(--gray-600); margin-bottom:32px; }
+    .form-submit { width:100%; padding:15px; font-size:1rem; }
+
+    .upload-area {
+      border:2px dashed var(--gray-200); border-radius:10px; padding:28px;
+      text-align:center; color:var(--gray-400); font-size:.88rem; transition:border-color .2s; cursor:pointer;
+    }
+    .upload-area:hover { border-color:var(--blue-mid); color:var(--blue-mid); }
+    .upload-area input[type="file"] { display:none; }
+    .upload-area .up-icon { font-size:1.8rem; display:block; margin-bottom:8px; }
+
+    .agree-box { background:var(--gray-50); border:1px solid var(--gray-200); border-radius:10px; padding:16px 18px; margin-bottom:16px; }
+    .agree-box p { font-size:.84rem; color:var(--gray-600); line-height:1.6; margin-bottom:10px; }
+    .agree-box label { display:flex; align-items:flex-start; gap:10px; font-size:.84rem; color:var(--gray-600); cursor:pointer; }
+    .agree-box input[type="radio"] { margin-top:3px; accent-color:var(--blue-mid); }
+
+    @media(max-width:1024px){ .perks-grid{grid-template-columns:1fr 1fr;} }
+    @media(max-width:768px){ .perks-grid{grid-template-columns:1fr;} .app-form-card{padding:28px 20px;} }
+  </style>
+</head>
+<body>
+<script src="shared.js"></script>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">Home</a> › Become a Tutor</p>
+    <h1>Become a Tutor</h1>
+    <p>Join the Tutoring4All family — make a real difference in students' lives while enjoying flexible, rewarding work.</p>
+  </div>
+</div>
+
+<!-- WHY JOIN -->
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-header center">
+      <span class="section-label">Why Join Us</span>
+      <h2 class="section-title">Work That Matters</h2>
+      <p class="section-sub">Tutoring4All has been connecting passionate educators with Sydney students since 2013. We're always looking for qualified, caring tutors to join our team.</p>
+    </div>
+    <div class="perks-grid">
+      <div class="perk-card reveal"><div class="perk-icon">⏰</div><h3>Flexible Hours</h3><p>Set your own availability and work around your study, career or lifestyle. You choose when and how often you tutor.</p></div>
+      <div class="perk-card reveal"><div class="perk-icon">💰</div><h3>Competitive Rates</h3><p>Set your expected hourly rate. Tutors work as independent subcontractors, giving you control over your income.</p></div>
+      <div class="perk-card reveal"><div class="perk-icon">🎯</div><h3>Meaningful Impact</h3><p>There's nothing quite like watching a student finally understand something they've been struggling with. Real, lasting impact.</p></div>
+      <div class="perk-card reveal"><div class="perk-icon">🤝</div><h3>Supportive Team</h3><p>You're never alone. Our team provides guidance, resources and support to help you deliver the best sessions possible.</p></div>
+      <div class="perk-card reveal"><div class="perk-icon">📚</div><h3>Access to Resources</h3><p>Tutors get access to our study materials, notes and planning tools to support their sessions.</p></div>
+      <div class="perk-card reveal"><div class="perk-icon">🗺️</div><h3>Tutor in Your Area</h3><p>We match you with students close to where you live — no long commutes, just local, convenient sessions.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATION FORM -->
+<section class="bg-gray">
+  <div class="section-inner">
+    <div class="app-form-card">
+      <h2>Tutor Application Form</h2>
+      <p class="sub">Complete the form below to apply. This is an initial application only — we'll be in touch to discuss next steps.</p>
+      <form data-ajax>
+
+        <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 20px;padding-bottom:10px;border-bottom:1px solid var(--gray-200);">Personal Information</h3>
+        <div class="form-row">
+          <div class="form-group"><label>Full Name <span class="required">*</span></label><input type="text" name="full_name" placeholder="Your full name" required /></div>
+          <div class="form-group"><label>Mobile Number <span class="required">*</span></label><input type="tel" name="mobile" placeholder="04xx xxx xxx" required /></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Email Address <span class="required">*</span></label><input type="email" name="email" placeholder="your@email.com" required /></div>
+          <div class="form-group"><label>Gender <span class="required">*</span></label>
+            <select name="gender" required><option value="">Select...</option><option>Male</option><option>Female</option><option>Prefer not to say</option></select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Date of Birth <span class="required">*</span></label><input type="date" name="dob" required /></div>
+          <div class="form-group"><label>Suburb You Currently Live In <span class="required">*</span></label><input type="text" name="suburb" placeholder="e.g. Five Dock" required /></div>
+        </div>
+
+        <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:28px 0 20px;padding-bottom:10px;border-bottom:1px solid var(--gray-200);">Service & Availability</h3>
+        <div class="form-group"><label>Suburb(s) You Can Tutor In <span class="required">*</span></label><input type="text" name="tutor_suburbs" placeholder="e.g. Five Dock, Drummoyne, Burwood..." required /></div>
+        <div class="form-group"><label>Are You Available For: <span class="required">*</span></label>
+          <select name="availability_type" required><option value="">Select...</option><option>In-home tutoring</option><option>Online tutoring</option><option>Both</option></select>
+        </div>
+        <div class="form-group"><label>What Year Groups Can You Tutor? <span class="required">*</span></label>
+          <div class="checkbox-list">
+            <label class="checkbox-item"><input type="checkbox" name="year_groups" value="primary" /> Primary School (K–6)</label>
+            <label class="checkbox-item"><input type="checkbox" name="year_groups" value="7-10" /> Years 7–10</label>
+            <label class="checkbox-item"><input type="checkbox" name="year_groups" value="11-12" /> Year 11–12 (HSC)</label>
+          </div>
+        </div>
+        <div class="form-group"><label>Which Subjects Can You Tutor? <span class="required">*</span></label><textarea name="subjects" placeholder="List all subjects you are able to tutor..." required></textarea></div>
+        <div class="form-row">
+          <div class="form-group"><label>Do You Have Your Own Transport? <span class="required">*</span></label>
+            <select name="transport" required><option value="">Select...</option><option>Yes</option><option>No</option></select>
+          </div>
+          <div class="form-group"><label>Days/Times Generally Available <span class="required">*</span></label><input type="text" name="availability" placeholder="e.g. Weekday afternoons, Saturdays..." required /></div>
+        </div>
+
+        <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:28px 0 20px;padding-bottom:10px;border-bottom:1px solid var(--gray-200);">Qualifications & Experience</h3>
+        <div class="form-row">
+          <div class="form-group"><label>Year You Completed Your HSC</label><input type="text" name="hsc_year" placeholder="e.g. 2022" /></div>
+          <div class="form-group"><label>Education Background <span class="required">*</span></label><input type="text" name="education" placeholder="e.g. Bachelor of Science, UNSW (in progress)" required /></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Previous Tutoring or Teaching Experience? <span class="required">*</span></label>
+            <select name="has_experience" required><option value="">Select...</option><option>Yes</option><option>No</option></select>
+          </div>
+        </div>
+        <div class="form-group"><label>Please Briefly Describe Your Experience</label><textarea name="experience" placeholder="Tell us about any previous tutoring, teaching, or mentoring experience..."></textarea></div>
+        <div class="form-row">
+          <div class="form-group"><label>Do You Hold a Valid WWCC? <span class="required">*</span></label>
+            <select name="wwcc" required><option value="">Select...</option><option>Yes</option><option>No</option></select>
+          </div>
+          <div class="form-group"><label>WWCC Number (if applicable)</label><input type="text" name="wwcc_number" placeholder="Enter your WWCC number" /></div>
+        </div>
+
+        <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:28px 0 20px;padding-bottom:10px;border-bottom:1px solid var(--gray-200);">Professional Details</h3>
+        <div class="form-row">
+          <div class="form-group"><label>Do You Have an ABN? <span class="required">*</span></label>
+            <select name="has_abn" required><option value="">Select...</option><option>Yes</option><option>No</option></select>
+          </div>
+          <div class="form-group"><label>ABN (11 digits)</label><input type="text" name="abn" placeholder="Enter your 11-digit ABN" /></div>
+        </div>
+        <div class="form-group"><label>Expected Hourly Rate <span class="required">*</span></label><input type="text" name="hourly_rate" placeholder="e.g. $40–$55/hour" required /></div>
+        <div class="form-group"><label>Do You Speak Any Languages Other Than English?</label><input type="text" name="languages" placeholder="e.g. Mandarin, Arabic, Italian..." /></div>
+
+        <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:28px 0 20px;padding-bottom:10px;border-bottom:1px solid var(--gray-200);">Additional Questions</h3>
+        <div class="form-group"><label>Why Would You Like to Tutor With Tutoring4All? <span class="required">*</span></label><textarea name="motivation" placeholder="Tell us why you'd like to join our team and what motivates you to tutor..." required></textarea></div>
+        <div class="form-row">
+          <div class="form-group"><label>Are you comfortable providing support aligned with the NSW curriculum? <span class="required">*</span></label>
+            <select name="nsw_curriculum" required><option value="">Select...</option><option>Yes</option><option>No</option></select>
+          </div>
+          <div class="form-group"><label>Can you commit to tutoring for at least 12 months? <span class="required">*</span></label>
+            <select name="commitment" required><option value="">Select...</option><option>Yes</option><option>No</option><option>Maybe</option></select>
+          </div>
+        </div>
+
+        <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:28px 0 20px;padding-bottom:10px;border-bottom:1px solid var(--gray-200);">Resume Upload</h3>
+        <div class="form-group">
+          <label>Please Upload Your Resume</label>
+          <label class="upload-area" onclick="this.querySelector('input').click()">
+            <span class="up-icon">📎</span>
+            <strong style="color:var(--navy);display:block;margin-bottom:4px;">Click to upload your resume</strong>
+            <span>PDF, DOC or DOCX — max 10MB</span>
+            <input type="file" name="resume" accept=".pdf,.doc,.docx" onchange="this.closest('.upload-area').querySelector('strong').textContent = this.files[0]?.name || 'Click to upload your resume'" />
+          </label>
+        </div>
+
+        <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin:28px 0 20px;padding-bottom:10px;border-bottom:1px solid var(--gray-200);">Agreements</h3>
+        <div class="agree-box">
+          <p>By applying, you acknowledge that tutors work with Tutoring4All as <strong>independent subcontractors</strong>, not employees. You are responsible for your own tax obligations and insurance.</p>
+          <label><input type="radio" name="contractor_agree" value="agree" required /> I agree</label>
+          <label style="margin-top:8px;"><input type="radio" name="contractor_agree" value="disagree" /> I disagree</label>
+        </div>
+        <div class="agree-box">
+          <p>You understand that this form is an <strong>initial application only</strong>. Submission does not guarantee placement and Tutoring4All reserves the right to accept or decline applications at their discretion.</p>
+          <label><input type="radio" name="process_agree" value="agree" required /> I understand and agree</label>
+          <label style="margin-top:8px;"><input type="radio" name="process_agree" value="disagree" /> I disagree</label>
+        </div>
+
+        <button type="submit" class="btn btn-blue form-submit" style="margin-top:16px;">Submit Application →</button>
+        <p class="form-note" style="text-align:center;margin-top:12px;">We review all applications and will be in touch within 3–5 business days.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="nav.js"></script>
+</body>
+</html>

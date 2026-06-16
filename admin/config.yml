@@ -1,0 +1,110 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where uploaded images get committed in the repo, and the URL prefix used to reference them
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# Tutoring4All Content Manager
+# Each "collection" below maps to one of the content/*.json files that
+# the website's pages fetch and render at runtime (see content-render.js).
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    description: "Posts shown on the Blog page. Adding one here makes it appear automatically — no code changes needed."
+    files:
+      - name: "posts"
+        label: "Blog Posts"
+        file: "content/blog-posts.json"
+        format: "json"
+        fields:
+          - { label: "Posts", name: "posts", widget: "list", root: true, fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "URL Slug (no spaces, e.g. my-new-post)", name: "slug", widget: "string" },
+              { label: "Date", name: "date", widget: "date", date_format: "YYYY-MM-DD" },
+              { label: "Thumbnail Emoji", name: "emoji", widget: "string", default: "📚" },
+              { label: "Thumbnail Colour (CSS gradient)", name: "color", widget: "string", default: "linear-gradient(135deg,#0d2137,#1a4f82)" },
+              { label: "Tags", name: "tags", widget: "list" },
+              { label: "Short Excerpt (shown on Blog page)", name: "excerpt", widget: "text" },
+              { label: "Full Post Content", name: "body", widget: "markdown" }
+            ] }
+
+  - name: "tutors"
+    label: "Tutor Team"
+    label_singular: "Tutor"
+    description: "Tutor profile cards shown on the 'Our Sydney Tutoring Team' page."
+    files:
+      - name: "tutors"
+        label: "Tutors"
+        file: "content/tutors.json"
+        format: "json"
+        fields:
+          - { label: "Tutors", name: "tutors", widget: "list", root: true, fields: [
+              { label: "Name", name: "name", widget: "string" },
+              { label: "Role / Subject", name: "role", widget: "string" },
+              { label: "Photo (optional — leave blank to use the emoji avatar)", name: "image", widget: "image", required: false },
+              { label: "Avatar Emoji (used if no photo)", name: "emoji", widget: "string", default: "👨‍🏫" },
+              { label: "Avatar Colour (CSS gradient)", name: "color", widget: "string", default: "linear-gradient(135deg,#0d2137,#1a4f82)" },
+              { label: "Bio", name: "bio", widget: "text" },
+              { label: "Subject Tags", name: "subjects", widget: "list" }
+            ] }
+
+  - name: "testimonials"
+    label: "Testimonials"
+    label_singular: "Testimonial"
+    description: "Parent reviews shown on the homepage."
+    files:
+      - name: "testimonials"
+        label: "Testimonials"
+        file: "content/testimonials.json"
+        format: "json"
+        fields:
+          - { label: "Testimonials", name: "testimonials", widget: "list", root: true, fields: [
+              { label: "Star Rating (1-5)", name: "stars", widget: "number", value_type: "int", min: 1, max: 5, default: 5 },
+              { label: "Quote", name: "quote", widget: "text" },
+              { label: "Parent Name", name: "name", widget: "string" },
+              { label: "Role / Suburb", name: "role", widget: "string" },
+              { label: "Avatar Initial", name: "initial", widget: "string" }
+            ] }
+
+  - name: "faqs"
+    label: "FAQs"
+    label_singular: "FAQ"
+    description: "Questions in the homepage FAQ accordion."
+    files:
+      - name: "faqs"
+        label: "FAQs"
+        file: "content/faqs.json"
+        format: "json"
+        fields:
+          - { label: "FAQs", name: "faqs", widget: "list", root: true, fields: [
+              { label: "Question", name: "question", widget: "string" },
+              { label: "Answer", name: "answer", widget: "text" }
+            ] }
+
+  - name: "pricing"
+    label: "Shop Pricing"
+    label_singular: "Pricing"
+    description: "Bronze / Silver / Gold subscription package details on the Shop page."
+    files:
+      - name: "pricing"
+        label: "Pricing"
+        file: "content/pricing.json"
+        format: "json"
+        fields:
+          - { label: "Note shown above packages", name: "note", widget: "text" }
+          - { label: "Tiers", name: "tiers", widget: "list", fields: [
+              { label: "ID", name: "id", widget: "string" },
+              { label: "Medal Emoji", name: "medal", widget: "string" },
+              { label: "Name", name: "name", widget: "string" },
+              { label: "Label", name: "label", widget: "string" },
+              { label: "Featured / Most Popular", name: "featured", widget: "boolean", default: false },
+              { label: "Description", name: "description", widget: "text" },
+              { label: "Features", name: "features", widget: "list", fields: [
+                  { label: "Feature Label", name: "label", widget: "string" },
+                  { label: "Value", name: "value", widget: "string" }
+                ] }
+            ] }

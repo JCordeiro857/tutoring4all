@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Tutoring4All Sydney</title>
+  <meta name="description" content="Learn about Tutoring4All — founded by Cinzia Favotto in 2013, providing expert private tutoring across Sydney's Inner West and greater Sydney." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .founder-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .founder-img {
+      background: var(--gradient-hero); border-radius: var(--radius-lg);
+      aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center;
+      font-size: 5rem; position: relative; overflow: hidden;
+    }
+    .founder-img::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(13,33,55,0.5), transparent);
+    }
+    .founder-content h2 { font-family:'Playfair Display',serif; font-size:2rem; font-weight:800; color:var(--navy); margin-bottom:16px; }
+    .founder-content p { font-size:.95rem; color:var(--gray-600); line-height:1.78; margin-bottom:14px; }
+
+    .values-grid { display: grid; grid-template-columns: repeat(3,1fr); gap:24px; }
+    .value-card {
+      background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:32px 28px;
+      text-align:center; transition:all .3s;
+    }
+    .value-card:hover { transform:translateY(-5px); box-shadow:var(--shadow-lg); border-color:transparent; }
+    .value-icon { font-size:2rem; margin-bottom:14px; }
+    .value-card h3 { font-size:1.05rem; font-weight:700; color:var(--navy); margin-bottom:10px; }
+    .value-card p { font-size:.86rem; color:var(--gray-600); line-height:1.65; }
+
+    .diff-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .diff-item {
+      display:flex; gap:16px; align-items:flex-start;
+      padding:24px; background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius);
+    }
+    .diff-icon { width:44px; height:44px; border-radius:11px; flex-shrink:0; background:linear-gradient(135deg,var(--blue),var(--teal)); display:flex; align-items:center; justify-content:center; font-size:1.1rem; color:var(--white); }
+    .diff-item h4 { font-size:.97rem; font-weight:700; color:var(--navy); margin-bottom:5px; }
+    .diff-item p { font-size:.85rem; color:var(--gray-600); line-height:1.6; }
+
+    .schools-list { display:flex; flex-wrap:wrap; gap:10px; }
+    .school-tag { padding:6px 16px; background:var(--white); border:1px solid var(--gray-200); border-radius:100px; font-size:.83rem; color:var(--gray-600); font-weight:500; }
+
+    @media(max-width:768px){
+      .founder-grid,.diff-grid{grid-template-columns:1fr;}
+      .values-grid{grid-template-columns:1fr 1fr;}
+    }
+    @media(max-width:480px){ .values-grid{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+<script src="shared.js"></script>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">Home</a> › About</p>
+    <h1>About Our Tutoring Services</h1>
+    <p>Helping Sydney students reach their full potential since 2013 — one student at a time.</p>
+  </div>
+</div>
+
+<!-- FOUNDER STORY -->
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="founder-grid">
+      <div class="founder-img">🎓</div>
+      <div class="founder-content">
+        <span class="section-label">Our Story</span>
+        <h2>Founded on a Simple Belief</h2>
+        <p>Tutoring4All was founded by <strong>Cinzia Favotto</strong> in 2013 after recognising that students needed more than just academic assistance — they required guidance from experienced mentors who genuinely cared about their growth.</p>
+        <p>What began as a small tutoring service in Sydney's Inner West has grown into a trusted team of qualified educators, supporting students from Kindergarten through to Year 12 HSC across Sydney's Inner West and southern regions.</p>
+        <p>Over a decade later, our mission remains exactly the same: to provide every student with personalised, compassionate, and curriculum-aligned support that builds both their knowledge and their confidence.</p>
+        <div style="margin-top:28px;">
+          <a href="contact.html" class="btn btn-blue">Enquire Now →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR VALUES -->
+<section class="bg-gray">
+  <div class="section-inner">
+    <div class="section-header center">
+      <span class="section-label">What We Stand For</span>
+      <h2 class="section-title">Our Core Values</h2>
+      <p class="section-sub">Everything we do is guided by these principles — from how we select tutors to how we run every session.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="value-icon">🎯</div>
+        <h3>Personalised Instruction</h3>
+        <p>Every student is different. We tailor every session to individual learning styles, gaps, and goals — never a generic approach.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">🤝</div>
+        <h3>Genuine Mentorship</h3>
+        <p>Our tutors don't just teach content — they mentor students, building the study habits, resilience, and self-belief needed to thrive long-term.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">🛡️</div>
+        <h3>Safety First</h3>
+        <p>Every tutor holds a current WWCC and operates under our comprehensive Child Protection Policy and Code of Conduct.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">📋</div>
+        <h3>Transparent Communication</h3>
+        <p>Detailed progress reports after every session keep parents informed and ensure learning is always moving in the right direction.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">📚</div>
+        <h3>Curriculum Alignment</h3>
+        <p>All tutoring is directly aligned with the NSW school curriculum and NESA guidelines, complementing what students learn in class.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">💡</div>
+        <h3>Accessible Support</h3>
+        <p>No travel fees. No lock-in contracts. In-home, library, and online options. We make quality tutoring as accessible as possible for every family.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT MAKES US DIFFERENT -->
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">Our Difference</span>
+      <h2 class="section-title">What Sets Tutoring4All Apart</h2>
+      <p class="section-sub">There are many tutoring services in Sydney. Here's why families choose us — and stay with us.</p>
+    </div>
+    <div class="diff-grid">
+      <div class="diff-item reveal"><div class="diff-icon">📝</div><div><h4>Progress Reports After Every Session</h4><p>We document what was covered, improvements observed, and the plan for next time — so parents always know exactly where their child stands.</p></div></div>
+      <div class="diff-item reveal"><div class="diff-icon">🏠</div><div><h4>No Travel Fees</h4><p>Our tutors travel to your home or local library at no extra cost. Sessions happen in a comfortable, familiar environment that supports learning.</p></div></div>
+      <div class="diff-item reveal"><div class="diff-icon">💬</div><div><h4>Mid-Week Support</h4><p>Have a question between sessions? Our tutors offer mid-week feedback and support via messaging and virtual check-ins.</p></div></div>
+      <div class="diff-item reveal"><div class="diff-icon">🏫</div><div><h4>School-Specific Knowledge</h4><p>Our tutors understand the requirements of local Sydney schools and have supported students from institutions including Domremy College, Bethlehem College, and St Patrick's College.</p></div></div>
+      <div class="diff-item reveal"><div class="diff-icon">🔓</div><div><h4>No Lock-In Contracts</h4><p>We operate on a flexible, pay-as-you-go model. No long-term commitments required — just quality tutoring when you need it.</p></div></div>
+      <div class="diff-item reveal"><div class="diff-icon">👨‍🎓</div><div><h4>Tutors Who Remember Struggling</h4><p>Many of our tutors aren't just high achievers — they are individuals who remember what it was like to struggle, making them more empathetic and effective educators.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHOOLS WE'VE SUPPORTED -->
+<section class="bg-gray">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">Our Community</span>
+      <h2 class="section-title">Schools We've Supported</h2>
+      <p class="section-sub">We've helped students across many Sydney schools succeed — from local primary schools through to selective high schools.</p>
+    </div>
+    <div class="schools-list">
+      <span class="school-tag">Domremy College</span>
+      <span class="school-tag">Bethlehem College</span>
+      <span class="school-tag">St Patrick's College</span>
+      <span class="school-tag">Sydney Secondary College</span>
+      <span class="school-tag">Marcellin College</span>
+      <span class="school-tag">SCEGGS Redlands</span>
+      <span class="school-tag">Fort Street High School</span>
+      <span class="school-tag">James Ruse Agricultural High</span>
+      <span class="school-tag">Hurstville Boys' High School</span>
+      <span class="school-tag">Sydney Boys High School</span>
+      <span class="school-tag">Inner West Primary Schools</span>
+      <span class="school-tag">+ many more across Sydney</span>
+    </div>
+    <div style="margin-top:48px; text-align:center;">
+      <a href="our-sydney-tutoring-team.html" class="btn btn-blue" style="margin-right:14px;">Meet Our Team</a>
+      <a href="contact.html" class="btn btn-outline-dark">Get Started Today</a>
+    </div>
+  </div>
+</section>
+
+<script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Sydney Tutoring Team | Tutoring4All</title>
+  <meta name="description" content="Meet the qualified, WWCC-certified tutors at Tutoring4All — passionate educators helping Sydney students from K–12 reach their potential." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .team-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+    .team-card {
+      background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-lg); overflow:hidden;
+      transition:all .3s;
+    }
+    .team-card:hover { transform:translateY(-6px); box-shadow:var(--shadow-xl); border-color:transparent; }
+    .team-avatar {
+      height:180px; display:flex; align-items:center; justify-content:center;
+      font-size:4rem; position:relative;
+    }
+    .team-card-body { padding:24px; }
+    .team-card h3 { font-size:1.1rem; font-weight:700; color:var(--navy); margin-bottom:4px; }
+    .team-role { font-size:.8rem; font-weight:600; color:var(--teal); text-transform:uppercase; letter-spacing:.5px; margin-bottom:12px; }
+    .team-card p { font-size:.86rem; color:var(--gray-600); line-height:1.65; margin-bottom:14px; }
+    .team-subjects { display:flex; flex-wrap:wrap; gap:6px; }
+    .subject-tag { padding:4px 10px; background:var(--gray-100); border-radius:100px; font-size:.75rem; font-weight:600; color:var(--gray-600); }
+    .wwcc-badge { display:inline-flex; align-items:center; gap:5px; font-size:.75rem; font-weight:700; color:var(--green); margin-bottom:10px; }
+
+    .hiring-box {
+      background:var(--gradient-hero); border-radius:var(--radius-lg); padding:48px;
+      text-align:center; color:var(--white); position:relative; overflow:hidden;
+    }
+    .hiring-box::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 50% 0%,rgba(245,166,35,.12),transparent 65%); }
+    .hiring-box-inner { position:relative; z-index:1; max-width:560px; margin:0 auto; }
+    .hiring-box h2 { font-family:'Playfair Display',serif; font-size:2rem; font-weight:800; margin-bottom:12px; }
+    .hiring-box p { color:rgba(255,255,255,.7); line-height:1.7; margin-bottom:28px; }
+
+    @media(max-width:1024px){ .team-grid{grid-template-columns:1fr 1fr;} }
+    @media(max-width:640px){ .team-grid{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+<script src="shared.js"></script>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">Home</a> › <a href="about.html">About</a> › Our Team</p>
+    <h1>Our Sydney Tutoring Team</h1>
+    <p>Qualified, WWCC-certified educators who are passionate about making a real difference for every student.</p>
+  </div>
+</div>
+
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-header center">
+      <span class="section-label">Meet the Team</span>
+      <h2 class="section-title">Educators Who Genuinely Care</h2>
+      <p class="section-sub">Every Tutoring4All tutor is carefully selected, WWCC verified, and committed to our values of personalised support and genuine mentorship. Many were once students who needed extra help themselves.</p>
+    </div>
+
+    <div class="highlight-box" style="margin-bottom:48px;">
+      <p>🛡️ <strong>All tutors hold a current Working With Children Check (WWCC)</strong> as required by NSW law. Every tutor has reviewed and agreed to our Code of Conduct and Child Protection Policy before working with students.</p>
+    </div>
+
+    <div class="team-grid"><!-- populated by content-render.js from content/tutors.json --></div>
+  </div>
+</section>
+
+<!-- JOIN THE TEAM -->
+<section class="bg-gray">
+  <div class="section-inner">
+    <div class="hiring-box">
+      <div class="hiring-box-inner">
+        <span class="section-label" style="color:var(--gold);">Join Our Team</span>
+        <h2>Are You a Passionate Educator?</h2>
+        <p>We're always looking for qualified, caring tutors to join the Tutoring4All family. Work flexible hours, make a real difference, and grow alongside a supportive team.</p>
+        <a href="become-a-tutor.html" class="btn btn-primary btn-lg">Apply to Become a Tutor</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="nav.js"></script>
+<script src="content-render.js"></script>
+</body>
+</html>

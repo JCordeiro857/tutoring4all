@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Primary School Tutoring | Tutoring4All Sydney</title>
+  <meta name="description" content="Expert in-home primary school tutoring for Years K–6 in Sydney. English, Maths, NAPLAN and OC preparation. WWCC certified tutors." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .two-col { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; }
+    .subject-cards { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .subj-card { background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:28px; transition:all .25s; }
+    .subj-card:hover { border-color:var(--blue-mid); box-shadow:var(--shadow-md); transform:translateY(-3px); }
+    .subj-icon { font-size:1.8rem; margin-bottom:12px; }
+    .subj-card h3 { font-size:1rem; font-weight:700; color:var(--navy); margin-bottom:8px; }
+    .subj-card ul { list-style:none; display:flex; flex-direction:column; gap:6px; }
+    .subj-card li { font-size:.84rem; color:var(--gray-600); display:flex; align-items:center; gap:8px; }
+    .subj-card li::before { content:'→'; color:var(--teal); font-weight:700; flex-shrink:0; }
+
+    .years-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
+    .year-pill {
+      background:var(--white); border:2px solid var(--gray-200); border-radius:var(--radius); padding:18px;
+      text-align:center; transition:all .25s; cursor:default;
+    }
+    .year-pill:hover { border-color:var(--blue-mid); background:#eff6ff; }
+    .year-pill strong { display:block; font-size:1.2rem; font-weight:800; color:var(--navy); }
+    .year-pill span { font-size:.75rem; color:var(--gray-400); }
+
+    .benefit-list { display:flex; flex-direction:column; gap:14px; }
+    .benefit-item { display:flex; gap:12px; align-items:flex-start; }
+    .benefit-item .bi { width:28px; height:28px; border-radius:8px; background:var(--teal); color:var(--white); display:flex; align-items:center; justify-content:center; font-size:.8rem; flex-shrink:0; }
+    .benefit-item p { font-size:.9rem; color:var(--gray-600); line-height:1.65; }
+
+    .quote-box { background:var(--gradient-hero); border-radius:var(--radius-lg); padding:40px; color:var(--white); }
+    .quote-box blockquote { font-family:'Playfair Display',serif; font-size:1.4rem; font-style:italic; line-height:1.5; margin-bottom:12px; }
+    .quote-box cite { font-size:.82rem; color:rgba(255,255,255,.6); }
+
+    @media(max-width:1024px){ .two-col{grid-template-columns:1fr; gap:40px;} .years-grid{grid-template-columns:repeat(3,1fr);} }
+    @media(max-width:768px){ .subject-cards{grid-template-columns:1fr;} .years-grid{grid-template-columns:1fr 1fr;} }
+  </style>
+</head>
+<body>
+<script src="shared.js"></script>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">Home</a> › <a href="home-tutoring-services.html">Services</a> › Primary School</p>
+    <h1>Primary School Tutoring</h1>
+    <p>Building strong foundations in literacy and numeracy for Years K–6 — in the comfort of your home.</p>
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="two-col">
+      <div>
+        <span class="section-label">Years K–6</span>
+        <h2 class="section-title">Expert Support for Primary School Students</h2>
+        <p style="color:var(--gray-600);line-height:1.75;margin-bottom:16px;">Our experienced team provides tailored, one-on-one in-home tutoring for primary school students across Sydney. Whether your child needs to catch up, build confidence, or get ahead — we create a personalised approach that suits their individual learning style and goals.</p>
+        <p style="color:var(--gray-600);line-height:1.75;margin-bottom:28px;">Sessions are structured yet engaging, focusing on building the foundational skills that carry students through their entire academic journey.</p>
+        <div class="benefit-list">
+          <div class="benefit-item"><div class="bi">✓</div><p><strong>Individual needs assessment</strong> to identify strengths and gaps before lessons begin</p></div>
+          <div class="benefit-item"><div class="bi">✓</div><p><strong>Customised one-on-one sessions</strong> tailored to your child's learning pace and style</p></div>
+          <div class="benefit-item"><div class="bi">✓</div><p><strong>Progress reports after every session</strong> so you always know exactly how your child is going</p></div>
+          <div class="benefit-item"><div class="bi">✓</div><p><strong>No travel fees</strong> — your tutor comes to your home or local library</p></div>
+          <div class="benefit-item"><div class="bi">✓</div><p><strong>Long-term development planning</strong> to ensure consistent improvement over time</p></div>
+        </div>
+        <div style="margin-top:32px;">
+          <a href="contact.html" class="btn btn-blue">Book a Free Consultation →</a>
+        </div>
+      </div>
+      <div>
+        <div class="quote-box reveal">
+          <blockquote>"Learning is about the journey, not the destination."</blockquote>
+          <cite>— A reminder we share with every student</cite>
+        </div>
+        <div style="margin-top:24px; background:var(--gray-50); border:1px solid var(--gray-200); border-radius:var(--radius); padding:28px;">
+          <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:16px;">Year Groups We Cover</h3>
+          <div class="years-grid">
+            <div class="year-pill"><strong>K</strong><span>Kinder</span></div>
+            <div class="year-pill"><strong>1</strong><span>Year 1</span></div>
+            <div class="year-pill"><strong>2</strong><span>Year 2</span></div>
+            <div class="year-pill"><strong>3</strong><span>Year 3</span></div>
+            <div class="year-pill"><strong>4</strong><span>Year 4</span></div>
+            <div class="year-pill"><strong>5</strong><span>Year 5</span></div>
+            <div class="year-pill"><strong>6</strong><span>Year 6</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBJECTS -->
+<section class="bg-gray">
+  <div class="section-inner">
+    <div class="section-header center">
+      <span class="section-label">What We Cover</span>
+      <h2 class="section-title">Subjects & Focus Areas</h2>
+      <p class="section-sub">Our primary school tutoring covers all core curriculum areas with a focus on building real understanding — not just memorisation.</p>
+    </div>
+    <div class="subject-cards">
+      <div class="subj-card reveal">
+        <div class="subj-icon">📖</div>
+        <h3>Literacy & English</h3>
+        <ul>
+          <li>Guided reading to enhance comprehension</li>
+          <li>Spelling rules and phonics instruction</li>
+          <li>Text type analysis and writing techniques</li>
+          <li>Creative and persuasive writing</li>
+          <li>Grammar and punctuation skills</li>
+          <li>Weekly skill-building tasks</li>
+        </ul>
+      </div>
+      <div class="subj-card reveal">
+        <div class="subj-icon">🔢</div>
+        <h3>Mathematics & Numeracy</h3>
+        <ul>
+          <li>Topic-by-topic content review</li>
+          <li>Practice question sets and exercises</li>
+          <li>Formula sheet resources</li>
+          <li>Past test analysis for improvement</li>
+          <li>Problem-solving strategies</li>
+          <li>Mental arithmetic and times tables</li>
+        </ul>
+      </div>
+      <div class="subj-card reveal">
+        <div class="subj-icon">📝</div>
+        <h3>NAPLAN Preparation</h3>
+        <ul>
+          <li>Reading, writing, language conventions</li>
+          <li>Numeracy test preparation</li>
+          <li>Practice with past NAPLAN papers</li>
+          <li>Exam technique and time management</li>
+          <li>Reducing test anxiety and building confidence</li>
+        </ul>
+      </div>
+      <div class="subj-card reveal">
+        <div class="subj-icon">🏫</div>
+        <h3>OC & Selective Prep</h3>
+        <ul>
+          <li>Opportunity Class (OC) entry preparation</li>
+          <li>Selective High School entry exam prep</li>
+          <li>Critical thinking and reasoning skills</li>
+          <li>Mathematical reasoning</li>
+          <li>Reading comprehension strategies</li>
+          <li>Written expression practice</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--white); text-align:center;">
+  <div class="section-inner">
+    <span class="section-label">Get Started</span>
+    <h2 class="section-title">Give Your Child the Best Start</h2>
+    <p class="section-sub" style="margin:0 auto 32px;">Contact us today for a no-obligation conversation about your child's needs. We'll match them with the perfect tutor in your area.</p>
+    <a href="contact.html" class="btn btn-blue btn-lg" style="margin-right:14px;">Enquire Now →</a>
+    <a href="home-tutoring-services.html" class="btn btn-outline-dark btn-lg">All Services</a>
+  </div>
+</section>
+
+<script src="nav.js"></script>
+</body>
+</html>

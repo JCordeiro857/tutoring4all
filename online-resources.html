@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Resources for High School Students | Tutoring4All</title>
+  <meta name="description" content="HSC essay feedback, study notes, creative writing guides, and online resources for high school students from Tutoring4All Sydney." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .packages-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; align-items:start; }
+    .pkg-card {
+      background:var(--white); border:2px solid var(--gray-200); border-radius:var(--radius-lg); padding:36px 28px;
+      text-align:center; position:relative; transition:all .3s;
+    }
+    .pkg-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-lg); }
+    .pkg-card.featured { border-color:var(--gold); box-shadow:0 8px 32px rgba(245,166,35,.15); transform:scale(1.03); }
+    .pkg-card.featured:hover { transform:scale(1.03) translateY(-4px); }
+    .best-tag { position:absolute; top:-14px; left:50%; transform:translateX(-50%); background:var(--gold); color:var(--navy); padding:5px 18px; border-radius:100px; font-size:.72rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; white-space:nowrap; }
+    .pkg-medal { font-size:2.4rem; margin-bottom:12px; }
+    .pkg-card h3 { font-size:1.2rem; font-weight:800; color:var(--navy); margin-bottom:6px; }
+    .pkg-card .pkg-tag { font-size:.72rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--teal); margin-bottom:16px; display:block; }
+    .pkg-card p { font-size:.86rem; color:var(--gray-600); line-height:1.65; margin-bottom:20px; }
+    .pkg-features { list-style:none; text-align:left; margin-bottom:28px; display:flex; flex-direction:column; gap:9px; }
+    .pkg-features li { display:flex; align-items:center; gap:9px; font-size:.86rem; color:var(--gray-600); }
+    .pkg-features li::before { content:'✓'; color:var(--green); font-weight:700; flex-shrink:0; }
+
+    .resource-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .res-card { background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:28px; transition:all .25s; }
+    .res-card:hover { border-color:var(--blue-mid); box-shadow:var(--shadow-md); transform:translateY(-3px); }
+    .res-icon { font-size:1.8rem; margin-bottom:12px; }
+    .res-card h3 { font-size:1rem; font-weight:700; color:var(--navy); margin-bottom:8px; }
+    .res-card p { font-size:.85rem; color:var(--gray-600); line-height:1.6; margin-bottom:14px; }
+    .res-badge { display:inline-block; padding:4px 12px; border-radius:100px; font-size:.72rem; font-weight:700; }
+    .free { background:#ecfdf5; color:#065f46; }
+    .premium { background:#fffbeb; color:#92400e; }
+    .on-req { background:#eff6ff; color:#1a4f82; }
+
+    .notes-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .notes-item { background:var(--white); border:1px solid var(--gray-200); border-radius:10px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; }
+    .notes-item span { font-size:.88rem; font-weight:500; color:var(--gray-800); }
+    .notes-item .avail { font-size:.75rem; font-weight:700; color:var(--teal); background:#f0fdfa; padding:3px 10px; border-radius:100px; }
+
+    @media(max-width:1024px){ .packages-grid,.resource-grid{grid-template-columns:1fr 1fr;} .pkg-card.featured{transform:none;} }
+    @media(max-width:768px){ .packages-grid,.resource-grid,.notes-grid{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+<script src="shared.js"></script>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">Home</a> › Online Resources</p>
+    <h1>Online Resources for High School Students</h1>
+    <p>Essay feedback, study notes, planning tools and more — designed specifically for NSW Preliminary and HSC students.</p>
+  </div>
+</div>
+
+<!-- ESSAY FEEDBACK -->
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-header center">
+      <span class="section-label">Essay Feedback & Marking</span>
+      <h2 class="section-title">Get Expert Feedback on Your Essays</h2>
+      <p class="section-sub">Submit your essay and receive detailed, actionable feedback from experienced HSC markers. Available for all Preliminary and HSC subjects with fast turnaround times.</p>
+    </div>
+    <div class="packages-grid">
+      <div class="pkg-card reveal">
+        <div class="pkg-medal">🥉</div>
+        <h3>Bronze Package</h3>
+        <span class="pkg-tag">Fastest Turnaround</span>
+        <p>A comprehensive final comment covering your essay's overall strengths, weaknesses, and specific improvement areas — ideal when you need fast feedback.</p>
+        <ul class="pkg-features">
+          <li>Extensive final comment at the end</li>
+          <li>6–12 hour turnaround</li>
+          <li>Expedited options available</li>
+          <li>All Preliminary & HSC subjects</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline-dark" style="width:100%;">Enquire Now</a>
+      </div>
+      <div class="pkg-card featured reveal">
+        <span class="best-tag">Most Popular</span>
+        <div class="pkg-medal">🥇</div>
+        <h3>Gold Package</h3>
+        <span class="pkg-tag">Most Comprehensive</span>
+        <p>Extensive in-text comments throughout your essay plus a detailed final summary. The most thorough feedback available — ideal for major assessments.</p>
+        <ul class="pkg-features">
+          <li>Extensive comments throughout the essay</li>
+          <li>Marking corrections for sentences, grammar & punctuation</li>
+          <li>Comprehensive final comment</li>
+          <li>12–24 hour turnaround</li>
+          <li>All Preliminary & HSC subjects</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary" style="width:100%;">Enquire Now</a>
+      </div>
+      <div class="pkg-card reveal">
+        <div class="pkg-medal">🥈</div>
+        <h3>Silver Package</h3>
+        <span class="pkg-tag">Balanced Feedback</span>
+        <p>Selected in-text comments plus a detailed conclusion comment — a great balance between depth and turnaround time for regular practice.</p>
+        <ul class="pkg-features">
+          <li>Limited comments throughout</li>
+          <li>Detailed final comment</li>
+          <li>12–24 hour turnaround</li>
+          <li>All Preliminary & HSC subjects</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline-dark" style="width:100%;">Enquire Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ONLINE LIBRARY -->
+<section class="bg-gray">
+  <div class="section-inner">
+    <div class="section-header center">
+      <span class="section-label">Online Library</span>
+      <h2 class="section-title">Study Tools & Planning Resources</h2>
+      <p class="section-sub">Free and premium resources designed to help HSC students stay organised, plan effectively and study smarter.</p>
+    </div>
+    <div class="resource-grid">
+      <div class="res-card reveal">
+        <div class="res-icon">📊</div>
+        <h3>Essay Planning Table</h3>
+        <p>A structured essay planning template with instruction notes to help students organise their arguments and evidence before writing.</p>
+        <span class="res-badge premium">Available on enquiry</span>
+      </div>
+      <div class="res-card reveal">
+        <div class="res-icon">📅</div>
+        <h3>Study Timetable</h3>
+        <p>A customisable study timetable to help students balance all their subjects and avoid cramming. Request yours free via email.</p>
+        <span class="res-badge free">FREE via email</span>
+      </div>
+      <div class="res-card reveal">
+        <div class="res-icon">✍️</div>
+        <h3>Creative Writing Pointers</h3>
+        <p>A practical guide covering key techniques, structures, and tips to help students excel in HSC creative writing tasks.</p>
+        <span class="res-badge premium">Available on enquiry</span>
+      </div>
+    </div>
+    <div class="highlight-box" style="margin-top:28px;">
+      <p>📧 <strong>To request the Study Timetable for free,</strong> simply email us at <a href="mailto:info@Tutoring4All.com.au" style="color:var(--blue);font-weight:600;">info@Tutoring4All.com.au</a> with your name and year group.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STUDY NOTES -->
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">HSC Study Notes</span>
+      <h2 class="section-title">Subject Notes Available</h2>
+      <p class="section-sub">Our comprehensive HSC study notes are available for a wide range of Preliminary and HSC subjects. Custom topic and module notes can also be requested.</p>
+    </div>
+    <div class="notes-grid">
+      <div class="notes-item reveal"><span>English — Preliminary Standard</span><span class="avail">Available</span></div>
+      <div class="notes-item reveal"><span>English — Preliminary Advanced</span><span class="avail">Available</span></div>
+      <div class="notes-item reveal"><span>English — HSC Standard</span><span class="avail">Available</span></div>
+      <div class="notes-item reveal"><span>English — HSC Advanced</span><span class="avail">Available</span></div>
+      <div class="notes-item reveal"><span>Studies of Religion I — Preliminary</span><span class="avail">Available</span></div>
+      <div class="notes-item reveal"><span>Studies of Religion II — HSC</span><span class="avail">Available</span></div>
+      <div class="notes-item reveal"><span>Legal Studies — Preliminary</span><span class="avail">Available</span></div>
+      <div class="notes-item reveal"><span>Legal Studies — HSC</span><span class="avail">Available</span></div>
+      <div class="notes-item reveal"><span>Business Studies — Preliminary</span><span class="avail">Available</span></div>
+      <div class="notes-item reveal"><span>Business Studies — HSC</span><span class="avail">Available</span></div>
+      <div class="notes-item reveal"><span>PDHPE — Preliminary</span><span class="avail">Available</span></div>
+      <div class="notes-item reveal"><span>PDHPE — HSC</span><span class="avail">Available</span></div>
+      <div class="notes-item reveal"><span>Drama — Preliminary</span><span class="avail">Available</span></div>
+      <div class="notes-item reveal"><span>Drama — HSC</span><span class="avail">Available</span></div>
+      <div class="notes-item reveal"><span>Custom Topic / Module Notes</span><span class="avail">On request</span></div>
+      <div class="notes-item reveal"><span>Other subjects</span><span class="avail">On request</span></div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="contact.html" class="btn btn-blue btn-lg">Request Notes or Resources →</a>
+    </div>
+  </div>
+</section>
+
+<script src="nav.js"></script>
+</body>
+</html>

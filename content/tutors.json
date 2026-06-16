@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Daniel",
+    "role": "Mathematics Tutor",
+    "emoji": "👨‍🏫",
+    "color": "linear-gradient(135deg,#0d2137,#1a4f82)",
+    "bio": "Daniel began as a student who struggled with English before finding the right support. That experience shaped him into an empathetic, highly effective tutor. He now specialises in Mathematics and brings genuine understanding to every student he works with.",
+    "subjects": ["Mathematics", "Years 7–12", "HSC"]
+  },
+  {
+    "name": "Sarah",
+    "role": "English & Humanities Tutor",
+    "emoji": "👩‍🏫",
+    "color": "linear-gradient(135deg,#1a3a5c,#2567a4)",
+    "bio": "A passionate English specialist with experience across Primary and High School levels. Sarah helps students develop strong analytical writing, comprehension and essay skills aligned to the NSW curriculum.",
+    "subjects": ["English", "Legal Studies", "History", "K–12"]
+  },
+  {
+    "name": "Michael",
+    "role": "Science & Maths Tutor",
+    "emoji": "👨‍💻",
+    "color": "linear-gradient(135deg,#1a4f82,#1a9dc4)",
+    "bio": "Michael specialises in the sciences and mathematics for high school students. With a background in engineering, he excels at making complex concepts accessible and building student confidence for exams.",
+    "subjects": ["Chemistry", "Physics", "Maths Ext", "Years 9–12"]
+  },
+  {
+    "name": "Emma",
+    "role": "Primary School Specialist",
+    "emoji": "👩‍🎓",
+    "color": "linear-gradient(135deg,#0d2137,#1a9dc4)",
+    "bio": "Emma is a dedicated primary school specialist who creates nurturing, fun learning environments for younger students. She focuses on building strong literacy and numeracy foundations with a patient, encouraging approach.",
+    "subjects": ["English", "Maths", "NAPLAN Prep", "K–6"]
+  },
+  {
+    "name": "James",
+    "role": "HSC Specialist & Business Studies",
+    "emoji": "👨‍🎨",
+    "color": "linear-gradient(135deg,#1a3a5c,#10b981)",
+    "bio": "James achieved an ATAR above 98 and now uses that experience to guide HSC students through the pressures of senior study. He specialises in Business Studies, Economics and Legal Studies.",
+    "subjects": ["Business Studies", "Legal Studies", "HSC"]
+  },
+  {
+    "name": "Olivia",
+    "role": "Piano Teacher",
+    "emoji": "👩‍🎵",
+    "color": "linear-gradient(135deg,#1a4f82,#8b5cf6)",
+    "bio": "Olivia is an AMEB-certified piano teacher who teaches students of all ages and abilities — from first-time beginners learning scales to advanced students preparing for examinations.",
+    "subjects": ["Piano", "AMEB Prep", "All Ages"]
+  }
+]

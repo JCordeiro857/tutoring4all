@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Tutoring Services | Tutoring4All Sydney</title>
+  <meta name="description" content="Private in-home tutoring services across Sydney for K–12 students. English, Maths, HSC, NAPLAN, Selective, and piano lessons." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .svc-big-grid { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+    .svc-big-card {
+      background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-lg);
+      overflow:hidden; transition:all .3s;
+    }
+    .svc-big-card:hover { transform:translateY(-5px); box-shadow:var(--shadow-xl); border-color:transparent; }
+    .svc-card-top { padding:36px 32px 28px; }
+    .svc-card-icon { font-size:2.2rem; margin-bottom:14px; }
+    .svc-card-top h2 { font-size:1.3rem; font-weight:800; color:var(--navy); margin-bottom:10px; }
+    .svc-card-top p { font-size:.9rem; color:var(--gray-600); line-height:1.7; }
+    .svc-card-footer {
+      padding:20px 32px; background:var(--gray-50); border-top:1px solid var(--gray-200);
+      display:flex; justify-content:space-between; align-items:center;
+    }
+    .svc-card-footer .tag { font-size:.78rem; font-weight:700; color:var(--teal); }
+    .svc-card-footer a { font-size:.85rem; font-weight:700; color:var(--blue-mid); text-decoration:none; }
+    .svc-card-footer a:hover { color:var(--navy); }
+
+    .how-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
+    .how-step { text-align:center; padding:28px 20px; }
+    .step-num {
+      width:56px; height:56px; border-radius:50%; margin:0 auto 16px;
+      background:var(--gradient-hero); color:var(--white);
+      display:flex; align-items:center; justify-content:center;
+      font-size:1.2rem; font-weight:800;
+    }
+    .how-step h4 { font-size:.97rem; font-weight:700; color:var(--navy); margin-bottom:8px; }
+    .how-step p { font-size:.84rem; color:var(--gray-600); line-height:1.6; }
+
+    .format-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .format-card {
+      background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius); padding:30px;
+      text-align:center; transition:all .25s;
+    }
+    .format-card:hover { border-color:var(--blue-mid); box-shadow:var(--shadow-md); }
+    .format-card .fi { font-size:2rem; margin-bottom:12px; }
+    .format-card h3 { font-size:1rem; font-weight:700; color:var(--navy); margin-bottom:8px; }
+    .format-card p { font-size:.85rem; color:var(--gray-600); line-height:1.6; }
+
+    @media(max-width:1024px){ .how-grid{grid-template-columns:1fr 1fr;} }
+    @media(max-width:768px){ .svc-big-grid,.format-grid{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+<script src="shared.js"></script>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">Home</a> › Services</p>
+    <h1>Home Tutoring Services</h1>
+    <p>Private, personalised tutoring for every stage of learning — in your home, at the library, or online.</p>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-header center">
+      <span class="section-label">Our Services</span>
+      <h2 class="section-title">Tutoring for Every Student</h2>
+      <p class="section-sub">From building foundational skills in primary school to achieving outstanding HSC results — we've got a tailored service for every learner.</p>
+    </div>
+    <div class="svc-big-grid">
+      <div class="svc-big-card reveal">
+        <div class="svc-card-top">
+          <div class="svc-card-icon">📚</div>
+          <h2>Primary School Tutoring</h2>
+          <p>Expert one-on-one support for Years K–6 in English, Maths and all core subjects. We build strong literacy and numeracy foundations, improve classroom confidence, and prepare students for assessments including NAPLAN and OC tests.</p>
+        </div>
+        <div class="svc-card-footer">
+          <span class="tag">Years K–6</span>
+          <a href="primary-school-tutoring.html">Learn more →</a>
+        </div>
+      </div>
+      <div class="svc-big-card reveal">
+        <div class="svc-card-top">
+          <div class="svc-card-icon">🎓</div>
+          <h2>High School & HSC Tutoring</h2>
+          <p>Comprehensive support for Years 7–12 across all subjects. Our specialist HSC tutors help Year 11 and 12 students master course content, develop exam techniques, and achieve the results they need for their ATAR goals.</p>
+        </div>
+        <div class="svc-card-footer">
+          <span class="tag">Years 7–12 · HSC</span>
+          <a href="high-school-tutoring.html">Learn more →</a>
+        </div>
+      </div>
+      <div class="svc-big-card reveal">
+        <div class="svc-card-top">
+          <div class="svc-card-icon">📝</div>
+          <h2>Exam Preparation</h2>
+          <p>Targeted, structured preparation for NAPLAN testing, Opportunity Class (OC) entry exams and Selective High School entry examinations. We provide proven strategies, practice papers and expert guidance to give your child every advantage.</p>
+        </div>
+        <div class="svc-card-footer">
+          <span class="tag">NAPLAN · OC · Selective</span>
+          <a href="contact.html">Enquire now →</a>
+        </div>
+      </div>
+      <div class="svc-big-card reveal">
+        <div class="svc-card-top">
+          <div class="svc-card-icon">🎹</div>
+          <h2>In-Home Piano Lessons</h2>
+          <p>Professional piano tuition delivered in the comfort of your home for students of all ages and skill levels. From first-time beginners discovering the keyboard through to advanced students preparing for AMEB examinations.</p>
+        </div>
+        <div class="svc-card-footer">
+          <span class="tag">All Ages · Beginner → Advanced</span>
+          <a href="contact.html">Enquire now →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="bg-gray">
+  <div class="section-inner">
+    <div class="section-header center">
+      <span class="section-label">Getting Started</span>
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-sub">Getting started with Tutoring4All is simple. Here's what to expect from the moment you reach out.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-step reveal"><div class="step-num">1</div><h4>Get in Touch</h4><p>Fill in our contact form or give us a call. Tell us about your child's year group, subjects, and goals.</p></div>
+      <div class="how-step reveal"><div class="step-num">2</div><h4>We Match Your Tutor</h4><p>We match your child with the most suitable qualified tutor based on their needs, location, and availability.</p></div>
+      <div class="how-step reveal"><div class="step-num">3</div><h4>First Session</h4><p>Your tutor comes to your home or library. The first session focuses on understanding your child's current level and building a plan.</p></div>
+      <div class="how-step reveal"><div class="step-num">4</div><h4>Progress & Reports</h4><p>After every session, you'll receive a detailed progress report. We track improvements and adapt the plan as needed.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SESSION FORMATS -->
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-header center">
+      <span class="section-label">Session Options</span>
+      <h2 class="section-title">We Work Around You</h2>
+      <p class="section-sub">Choose the format that suits your family best. All options are available with no travel fees.</p>
+    </div>
+    <div class="format-grid">
+      <div class="format-card reveal">
+        <div class="fi">🏠</div>
+        <h3>In-Home Tutoring</h3>
+        <p>Your tutor travels to your home. Students learn in a comfortable, familiar environment with no disruption to the family routine.</p>
+      </div>
+      <div class="format-card reveal">
+        <div class="fi">📖</div>
+        <h3>Library Sessions</h3>
+        <p>Sessions held at your local library — a dedicated, distraction-free space ideal for focused study.</p>
+      </div>
+      <div class="format-card reveal">
+        <div class="fi">💻</div>
+        <h3>Online Tutoring</h3>
+        <p>Live, interactive sessions via Zoom or Teams. Perfect for busy families, remote students, or when in-person isn't possible.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:48px;">
+      <a href="contact.html" class="btn btn-blue btn-lg">Book a Free Consultation →</a>
+    </div>
+  </div>
+</section>
+
+<script src="nav.js"></script>
+</body>
+</html>

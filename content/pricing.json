@@ -1,0 +1,56 @@
+{
+  "note": "Pricing is not listed online as rates vary depending on year group (primary/high school), format (in-home/online), and individual requirements. Contact us for a personalised quote with no obligation.",
+  "tiers": [
+    {
+      "id": "bronze",
+      "medal": "🥉",
+      "name": "Bronze",
+      "label": "Starter Package",
+      "featured": false,
+      "description": "A solid foundation of regular tutoring support — ideal for students who need consistent academic assistance without the extra bells and whistles.",
+      "features": [
+        { "label": "Sessions per term", "value": "Up to 4 sessions" },
+        { "label": "Session length", "value": "60 minutes" },
+        { "label": "Progress reports", "value": "After every session" },
+        { "label": "Format", "value": "In-home or online" },
+        { "label": "Subject coverage", "value": "1 subject" },
+        { "label": "Mid-week support", "value": "—" },
+        { "label": "Resource access", "value": "—" }
+      ]
+    },
+    {
+      "id": "gold",
+      "medal": "🥇",
+      "name": "Gold",
+      "label": "Premium Package",
+      "featured": true,
+      "description": "Our most comprehensive package — maximum support, resources, and personalised attention for students who want to get the most out of their tutoring.",
+      "features": [
+        { "label": "Sessions per term", "value": "Flexible — as needed" },
+        { "label": "Session length", "value": "60–90 minutes" },
+        { "label": "Progress reports", "value": "After every session" },
+        { "label": "Format", "value": "In-home, library or online" },
+        { "label": "Subject coverage", "value": "Up to 3 subjects" },
+        { "label": "Mid-week support", "value": "✓ Included" },
+        { "label": "Resource access", "value": "✓ Study notes + tools" }
+      ]
+    },
+    {
+      "id": "silver",
+      "medal": "🥈",
+      "name": "Silver",
+      "label": "Standard Package",
+      "featured": false,
+      "description": "A well-rounded tutoring plan with added extras — great for students who want consistent support across more than one subject area.",
+      "features": [
+        { "label": "Sessions per term", "value": "Up to 8 sessions" },
+        { "label": "Session length", "value": "60–75 minutes" },
+        { "label": "Progress reports", "value": "After every session" },
+        { "label": "Format", "value": "In-home, library or online" },
+        { "label": "Subject coverage", "value": "Up to 2 subjects" },
+        { "label": "Mid-week support", "value": "✓ Limited" },
+        { "label": "Resource access", "value": "✓ Basic resources" }
+      ]
+    }
+  ]
+}
