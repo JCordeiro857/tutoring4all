@@ -22,10 +22,12 @@
     .hb1 { width: 520px; height: 520px; background: rgba(37,103,164,0.3); top: -150px; right: -120px; }
     .hb2 { width: 360px; height: 360px; background: rgba(245,166,35,0.1); bottom: -80px; left: -80px; }
     .hero-inner {
-      max-width: 1200px; margin: 0 auto; position: relative; z-index: 1;
-      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+      max-width: 760px; margin: 0 auto; position: relative; z-index: 1;
+      text-align: center;
     }
-    .hero-logo { height: 110px; width: auto; margin-bottom: 24px; display: block; }
+    .hero-logo { height: 110px; width: auto; margin: 0 auto 24px; display: block; }
+    .hero-buttons { justify-content: center; }
+    .hero-stats { justify-content: center; }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
       background: rgba(245,166,35,0.15); border: 1px solid rgba(245,166,35,0.3);
@@ -108,10 +110,10 @@
       border: 1px solid var(--gray-200); border-radius: var(--radius);
       transition: all .25s;
     }
-    .feat-item:hover { border-color: var(--teal); box-shadow: var(--shadow-md); }
+    .feat-item:hover { border-color: var(--gold); box-shadow: var(--shadow-md); }
     .feat-icon {
       width: 42px; height: 42px; border-radius: 11px; flex-shrink: 0;
-      background: linear-gradient(135deg,var(--blue),var(--teal));
+      background: linear-gradient(135deg,var(--blue),var(--gold));
       display: flex; align-items: center; justify-content: center;
       font-size: 1.1rem; color: var(--white);
     }
@@ -134,7 +136,7 @@
       background: var(--white); border: 1px solid var(--gray-200);
       border-radius: var(--radius); padding: 18px; text-align: center;
     }
-    .mini-stat .n { font-size: 1.7rem; font-weight: 800; color: var(--blue-mid); }
+    .mini-stat .n { font-size: 1.7rem; font-weight: 800; color: var(--gold); }
     .mini-stat small { font-size: 0.78rem; color: var(--gray-600); display: block; margin-top: 3px; }
 
     /* ── AREAS ── */
@@ -157,7 +159,7 @@
       border-radius: 100px; font-size: 0.8rem; color: var(--gray-600); font-weight: 500;
       transition: all .2s; cursor: default;
     }
-    .chip:hover { border-color: var(--blue-mid); color: var(--blue-mid); background: #eff6ff; }
+    .chip:hover { border-color: var(--gold); color: #b45309; background: var(--gold-light); }
 
     /* ── TESTIMONIALS ── */
     .testimonials-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
@@ -172,7 +174,7 @@
     .testi-author { display: flex; align-items: center; gap: 12px; }
     .testi-avatar {
       width: 38px; height: 38px; border-radius: 50%;
-      background: linear-gradient(135deg,var(--blue),var(--teal));
+      background: linear-gradient(135deg,var(--blue),var(--gold));
       display: flex; align-items: center; justify-content: center;
       font-size: 0.9rem; font-weight: 700; color: var(--white);
     }
@@ -191,7 +193,7 @@
       font-size: 0.86rem; font-weight: 600; color: var(--blue);
       text-decoration: none; transition: all .2s;
     }
-    .faq-sub-link:hover { border-color: var(--blue-mid); box-shadow: var(--shadow-sm); }
+    .faq-sub-link:hover { border-color: var(--gold); box-shadow: var(--shadow-sm); }
 
     /* ── CTA BANNER ── */
     .cta-banner {
@@ -208,7 +210,6 @@
     .cta-banner-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
     @media (max-width: 1024px) {
-      .hero-inner { grid-template-columns: 1fr; }
       .services-grid { grid-template-columns: 1fr 1fr; }
       .about-grid { grid-template-columns: 1fr; gap: 48px; }
       .testimonials-grid { grid-template-columns: 1fr 1fr; }
@@ -243,28 +244,6 @@
         <div class="hero-stat"><strong>WWCC</strong><span>Certified tutors</span></div>
         <div class="hero-stat"><strong>Inner West</strong><span>& Greater Sydney</span></div>
       </div>
-    </div>
-    <div class="hero-cards fade-up d2">
-      <a href="primary-school-tutoring.html" class="hero-card" style="text-decoration:none;">
-        <div class="hc-icon hc1">📚</div>
-        <div><h3>Primary School Tutoring</h3><p>Years K–6 · English, Maths & all subjects</p></div>
-      </a>
-      <a href="high-school-tutoring.html" class="hero-card" style="text-decoration:none;">
-        <div class="hc-icon hc2">🎓</div>
-        <div><h3>High School & HSC Support</h3><p>Years 7–12 · HSC specialist support</p></div>
-      </a>
-      <a href="index.html#faqs" class="hero-card" style="text-decoration:none;">
-        <div class="hc-icon hc3">📝</div>
-        <div><h3>Exam Preparation</h3><p>NAPLAN · Selective · OC Tests</p></div>
-      </a>
-      <a href="online-resources.html" class="hero-card" style="text-decoration:none;">
-        <div class="hc-icon hc4">💻</div>
-        <div><h3>Online Tutoring & Resources</h3><p>HSC notes · essays · study guides</p></div>
-      </a>
-      <a href="home-tutoring-services.html" class="hero-card" style="text-decoration:none;">
-        <div class="hc-icon hc5">🎹</div>
-        <div><h3>Piano Lessons</h3><p>Beginner to advanced · AMEB prep</p></div>
-      </a>
     </div>
   </div>
 </section>
