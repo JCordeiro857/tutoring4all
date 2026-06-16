@@ -1,54 +1,174 @@
 {
-"googleRating": 4.8,
-"googleUrl": "https://www.google.com/search?q=tutoring4all+sydney+reviews",
-"testimonials": [
-  {
-    "show": true,
-    "stars": 5,
-    "quote": "Our tutor was absolutely wonderful with my daughter. Her confidence in Maths has improved enormously and she's no longer dreading school. Couldn't recommend Tutoring4All more highly.",
-    "name": "Sarah M.",
-    "role": "Parent · Five Dock",
-    "initial": "S"
-  },
-  {
-    "show": true,
-    "stars": 5,
-    "quote": "We started with Tutoring4All for selective school prep and our son got into his first choice school. The personalised approach and practice materials made all the difference.",
-    "name": "James T.",
-    "role": "Parent · Drummoyne",
-    "initial": "J"
-  },
-  {
-    "show": true,
-    "stars": 5,
-    "quote": "The progress reports after every session are fantastic — I always know exactly what my son covered and what's planned for next time. It feels like a real partnership.",
-    "name": "Lisa K.",
-    "role": "Parent · Haberfield",
-    "initial": "L"
-  },
-  {
-    "show": true,
-    "stars": 5,
-    "quote": "Jack responds best to calm, clear explanations, and his tutor really understood that. His understanding has improved and he's much more willing to ask questions now.",
-    "name": "Jack N.",
-    "role": "Chris N. · Year 9 Maths",
-    "initial": "JA"
-  },
-  {
-    "show": true,
-    "stars": 5,
-    "quote": "It has been a genuine pleasure to work with the fabulous tutors introduced to my son through Tutoring4All. In a matter of weeks, his confidence has increased and we have been delighted with his most recent assessment results.",
-    "name": "Melloney G.",
-    "role": "Parent of Year 11 Student",
-    "initial": "MG"
-  },
-  {
-    "show": true,
-    "stars": 5,
-    "quote": "As a previous student, I was getting 70-75% in Maths Standard 2 before working with my tutor. After working with them, I finished with a band 6 mark of 92 in my HSC. They gave me the confidence I needed ahead of my trials and exams.",
-    "name": "James T.",
-    "role": "Year 12 Student",
-    "initial": "JT"
-  }
-]
+  "googleRating": 4.8,
+  "googleUrl": "https://www.google.com/search?sca_esv=ec2bff8bd1e2ef21&sxsrf=ANbL-n5eFtXGLHZkQSUrdAgq6fo2Hw863w:1781584798385&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOdNMXek8vRUlU2Tz9jSEZP7ADF56VSPqrPu31GJUmWxtQmwXz8I3acJPo6jh4Wxh-cVZKA5BaX5Bmpi54TuNYFHqZ61UDO03yepvxzYhBf59FEkTLA%3D%3D&q=Tutoring4All+Pty+Ltd+Reviews&sa=X&ved=2ahUKEwi92K3I-IqVAxWZ5MkDHZBEGsYQ0bkNegQIQxAF&biw=580&bih=573&dpr=1.65",
+  "testimonials": [
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "My 11 year old daughter has been working with Sibel for the last couple months in preparation for year 7. She has been slowly gaining confidence in her academic journey would recommend Tutoring 4 all.",
+      "name": "Mitchell H.",
+      "role": "Parent - Year 7 ",
+      "initial": "M"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "I’m so fortunate, happy to have come across tutoring4all . My son is so happy working with his tutor. The tutor is very helpful, understanding of my son’s needs and very knowledgeable. My son always speaks so highly of his tutor and is always looking forward to his next session. Thank you immensely for providing this valuable service to my son.\n",
+      "name": "Anthony S",
+      "role": "Parent",
+      "initial": "A"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "I can highly recommend Tutoring4all. Our family has used them for maths and english tutoring over the last two years and it’s been very successful. They take care to make sure there is a good fit between tutor and student.\n",
+      "name": "Kate R.",
+      "role": "Parent · Haberfield",
+      "initial": "K"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "I was very happy with Rylan. My son was able to get a lot out of the sessions. After having a number of tutors over the years my son considered Rylan to be the best of them. He was always prepared for a lesson and my son warmed to his nature and style. My sons results greatly improved with Rylan's tutoring. Thank You Tutoring4All on the excellent match up.\n",
+      "name": "Janet G.",
+      "role": "Parent ",
+      "initial": "J"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "I just wanted to take the time to acknowledge your amazing maths tutor, Jonathan. I could not be happier with this match for my son.\n\nI absolutely love watching him come alive after his session. He says he has learnt more in the past few weeks than he has in the past year. He wants to share what he has learnt with me (which NEVER happens) and is so complimentary towards Jonathan. He said today, \"He actually makes me get excited to learn Maths, and I don’t feel like I am stupid like I do at school.\"\n\nWe are extremely grateful 🙏",
+      "name": "Aly. S",
+      "role": "Parent ",
+      "initial": "A"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "I have been blown away by Tutoring4All. From my first contact with them to each session, they listened to what my daughters needs were and matched her with the perfect tutor. We get a report after every session. My daughter knows her needs come first. If you are looking for a tutor for your child then get in contact with them. Highly recommended.\n",
+      "name": "Hetty C.",
+      "role": "Parent",
+      "initial": "H"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "We've had a great experience with Biology tutoring for our Year 12 daughter. Her understanding and confidence have improved she actually enjoys the sessions! The tutor explains things clearly and makes the subject far less overwhelming. Highly recommend! Cinzia was particularly helpful in finding us the right tutor.\n",
+      "name": "Sandra C",
+      "role": "Parent - Year 12 Biology",
+      "initial": "S"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "name": "Fu-Ping Brown",
+      "quote": "Anthony from Tutoring4All has been an outstanding tutor for my 15 year old son in Years 9 and 10, helping him with subjects like English, Maths, History, Geography, and PDHPE. My son is on the autism spectrum and thrives in creative areas, but needs extra support with academic subjects and managing his workload. Anthony is very knowledgeable, organised, and patient. He helps break down assignments, guides him through scaffolds, and keeps him on track with his assessment calendar—especially when multiple tasks are due at once. He also supports him with study for tests and helps me as a parent stay on top of everything. I couldn’t recommend him more highly.\n\nTutoring4All was one of the few tutoring places (maybe the only tutoring place) that I could find who provided tutors that came to your home to tutor children in a tailored manner, and tried to address needs, not merely following a curriculum program rigidly and inflexibly and taking months without progress or only tutored in English and Maths like a lot of other tutoring places out there. I am grateful to Cinzia at Tutoring4All for finding a tutor for my high school aged son who could help me as a parent juggle his school needs and help my son most of all!",
+      "role": "Parent - Year 9-10",
+      "initial": "F"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "Cinzia took the time and care to listen to my son's needs. My son was filled confidence in his schoolwork and this was reflected in his results. My investment in her tutoring was value for money.\n",
+      "name": "George F",
+      "role": "Parent",
+      "initial": "G"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "name": "Michelle A.",
+      "quote": "Finding the right fit tutor for your child can be difficult but Tutoring4All listens to your needs to find the right one. We have been lucky enough to have the same tutor for over 5years across 2 children.\n",
+      "role": "Parent",
+      "initial": "M"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "name": "K B.",
+      "quote": "My child attended a Year 11 essay readiness workshop in the school holidays. They found the workshop informative and full of valuable tips and resources that they could apply to many of the subjects they'd chosen for this year. My child left the session feeling empowered for the school year. Highly recommend!\n",
+      "role": "Parent - School Holidays Essay Workshop",
+      "initial": "K"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "We have only had a tutor for 1 term for my daughter and maths is now in her top 3 favourite subjects at school, which is far more than what we could have asked for!\n",
+      "name": "Babs K.",
+      "role": "Parent",
+      "initial": "B"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "name": "Deborah J.",
+      "quote": "A wonderful tutoring company,\nVery experienced and most helpful!",
+      "role": "Parent",
+      "initial": "D"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "name": "Evinia",
+      "quote": "A very knowledgeable tutor who is well engaged with our daughter. Friendly and kind.\n",
+      "role": "Parent",
+      "initial": "E"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "My daughter has benefited greatly from tutoring. High calibre and engaging\n",
+      "name": "Kate B.",
+      "role": "Parent",
+      "initial": "K"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "Happy to have engaged the team at Tutoring4All.\n",
+      "name": "Mark R.",
+      "role": "Parent",
+      "initial": "M"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "Highly recommend this tutoring service!!!!\n",
+      "name": "Bianca D.",
+      "role": "Parent",
+      "initial": "B"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "Tutoring done with kindess, compassion and understanding\n",
+      "name": "Christopher M. ",
+      "role": "Parent",
+      "initial": "C"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "Lots of practical assistance and appreciate weekly report on progress.\n",
+      "name": "Carmen K.",
+      "role": "Parent ",
+      "initial": "C"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "I’ve had a really positive experience with Tutoring 4 All. They’ve been friendly, responsive, and took the time to match my child with a tutor who’s a great fit. The whole process has been smooth and supportive — highly recommend.\n",
+      "name": "Ruth S. ",
+      "role": "Parent ",
+      "initial": "R"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "I’ve been really happy with the support from Tutoring4All. The tutor, Sarah has been patient, engaging, and tailored lessons to my child’s needs, which has made a big difference in both confidence and results. Communication has also been excellent throughout. Highly recommend!\n",
+      "name": "Betty F",
+      "role": "Parent",
+      "initial": "B"
+    }
+  ]
 }
