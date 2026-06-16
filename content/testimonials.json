@@ -89,6 +89,86 @@
       "quote": "My child attended a Year 11 essay readiness workshop in the school holidays. They found the workshop informative and full of valuable tips and resources that they could apply to many of the subjects they'd chosen for this year. My child left the session feeling empowered for the school year. Highly recommend!\n",
       "role": "Parent - School Holidays Essay Workshop",
       "initial": "K"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "We have only had a tutor for 1 term for my daughter and maths is now in her top 3 favourite subjects at school, which is far more than what we could have asked for!\n",
+      "name": "Babs K.",
+      "role": "Parent",
+      "initial": "B"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "name": "Deborah J.",
+      "quote": "A wonderful tutoring company,\nVery experienced and most helpful!",
+      "role": "Parent",
+      "initial": "D"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "name": "Evinia",
+      "quote": "A very knowledgeable tutor who is well engaged with our daughter. Friendly and kind.\n",
+      "role": "Parent",
+      "initial": "E"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "My daughter has benefited greatly from tutoring. High calibre and engaging\n",
+      "name": "Kate B.",
+      "role": "Parent",
+      "initial": "K"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "Happy to have engaged the team at Tutoring4All.\n",
+      "name": "Mark R.",
+      "role": "Parent",
+      "initial": "M"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "Highly recommend this tutoring service!!!!\n",
+      "name": "Bianca D.",
+      "role": "Parent",
+      "initial": "B"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "Tutoring done with kindess, compassion and understanding\n",
+      "name": "Christopher M. ",
+      "role": "Parent",
+      "initial": "C"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "Lots of practical assistance and appreciate weekly report on progress.\n",
+      "name": "Carmen K.",
+      "role": "Parent ",
+      "initial": "C"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "I’ve had a really positive experience with Tutoring 4 All. They’ve been friendly, responsive, and took the time to match my child with a tutor who’s a great fit. The whole process has been smooth and supportive — highly recommend.\n",
+      "name": "Ruth S. ",
+      "role": "Parent ",
+      "initial": "R"
+    },
+    {
+      "show": true,
+      "stars": 5,
+      "quote": "I’ve been really happy with the support from Tutoring4All. The tutor, Sarah has been patient, engaging, and tailored lessons to my child’s needs, which has made a big difference in both confidence and results. Communication has also been excellent throughout. Highly recommend!\n",
+      "name": "Betty F",
+      "role": "Parent",
+      "initial": "B"
     }
   ]
 }
