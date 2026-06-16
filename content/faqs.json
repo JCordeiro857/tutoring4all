@@ -1,13 +1,44 @@
 {
-"faqs": [
-  { "question": "How does in-home tutoring work?", "answer": "Your tutor travels directly to your home, local library, or a convenient meeting location at the agreed time. Sessions are one-on-one and fully tailored to your child's current needs. After each session, you'll receive a detailed progress report outlining what was covered, improvements observed, and what's planned for next time." },
-  { "question": "What year groups do you tutor?", "answer": "We tutor students from Kindergarten all the way through to Year 12 (HSC). This includes primary school students (K–6), high school students (Years 7–10), and senior students undertaking Preliminary and HSC courses (Years 11–12)." },
-  { "question": "What subjects do you cover?", "answer": "For primary school, we cover English, Maths, and general support across all subjects. For high school, we offer tutoring in English (Standard, Advanced, Extension), Mathematics (General, Advanced, Extension 1 & 2), Sciences (Biology, Chemistry, Physics), HSIE (Geography, History, Commerce), Business Studies, Legal Studies, Drama, Music, PDHPE, Studies of Religion, and more. We also offer piano lessons for all ages." },
-  { "question": "Are your tutors qualified and safe to work with children?", "answer": "Absolutely. Every Tutoring4All tutor holds a current Working With Children Check (WWCC) as mandated by NSW law. All tutors are carefully vetted, qualified, and must agree to our Code of Conduct and Child Protection Policy before working with any students." },
-  { "question": "Do you charge for travel?", "answer": "No. There are no travel fees. Our tutors come to your home or a mutually convenient location at no extra cost. We also offer online tutoring via Zoom or Teams if that suits your family better." },
-  { "question": "Is there a lock-in contract?", "answer": "No lock-in contracts at all. We operate on a pay-as-you-go model, giving your family full flexibility. That said, we do have a Cancellation Policy in place that requires reasonable notice to protect both students and tutors." },
-  { "question": "Do you help with NAPLAN and Selective School preparation?", "answer": "Yes! We offer targeted preparation for NAPLAN testing, Opportunity Class (OC) entry exams, and Selective High School entry tests. Sessions focus on exam technique, time management, and practising with past papers and tailored materials." },
-  { "question": "How much does tutoring cost?", "answer": "Rates vary depending on the year group (primary or high school), format (individual or small group), and specific requirements. We don't publish fixed rates as every student's needs are different — please contact us for a personalised quote. There are no hidden fees or travel charges." },
-  { "question": "How do I get started?", "answer": "Simply fill in our contact form or give us a call on 0490 423 713. We'll have a friendly chat about your child's needs, year group, and preferred format, then match them with the most suitable tutor in your area." }
-]
+  "faqs": [
+    {
+      "question": "How does in-home tutoring work?",
+      "answer": "Your tutor travels directly to your home, local library, or a convenient meeting location at the agreed time. Sessions are one-on-one and fully tailored to your child's current needs. After each session, you'll receive a detailed progress report outlining what was covered, improvements observed, and what's planned for next time."
+    },
+    {
+      "question": "What year groups do you tutor?",
+      "answer": "We tutor students from Kindergarten all the way through to Year 12 (HSC). This includes primary school students (K–6), high school students (Years 7–10), and senior students undertaking Preliminary and HSC courses (Years 11–12)."
+    },
+    {
+      "question": "What subjects do you cover?",
+      "answer": "For primary school, we cover English, Maths, and general support across all subjects. For high school, we offer tutoring in English (Standard, Advanced, Extension), Mathematics (General, Advanced, Extension 1 & 2), Sciences (Biology, Chemistry, Physics), HSIE (Geography, History, Commerce), Business Studies, Legal Studies, Drama, Music, PDHPE, Studies of Religion, and more. We also offer piano lessons for all ages."
+    },
+    {
+      "question": "Are your tutors qualified and safe to work with children?",
+      "answer": "Absolutely. Every Tutoring4All tutor holds a current Working With Children Check (WWCC) as mandated by NSW law. All tutors are carefully vetted, qualified, and must agree to our Code of Conduct and Child Protection Policy before working with any students."
+    },
+    {
+      "question": "Do you charge for travel?",
+      "answer": "No. There are no travel fees. Our tutors come to your home or a mutually convenient location at no extra cost. We also offer online tutoring via Zoom or Teams if that suits your family better."
+    },
+    {
+      "question": "Is there a lock-in contract?",
+      "answer": "No lock-in contracts at all. We operate on a pay-as-you-go model, giving your family full flexibility. That said, we do have a Cancellation Policy in place that requires reasonable notice to protect both students and tutors."
+    },
+    {
+      "question": "Do you help with NAPLAN and Selective School preparation?",
+      "answer": "Yes! We offer targeted preparation for NAPLAN testing, Opportunity Class (OC) entry exams, and Selective High School entry tests. Sessions focus on exam technique, time management, and practising with past papers and tailored materials."
+    },
+    {
+      "question": "How much does tutoring cost?",
+      "answer": "Rates vary depending on the year group (primary or high school), format (individual or small group), and specific requirements. We don't publish fixed rates as every student's needs are different — please contact us for a personalised quote. There are no hidden fees or travel charges."
+    },
+    {
+      "question": "How do I get started?",
+      "answer": "Simply fill in our contact form or give us a call on 0490 423 713. We'll have a friendly chat about your child's needs, year group, and preferred format, then match them with the most suitable tutor in your area."
+    },
+    {
+      "question": "hello ",
+      "answer": "there\n"
+    }
+  ]
 }
