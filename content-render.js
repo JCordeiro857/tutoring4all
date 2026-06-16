@@ -23,7 +23,7 @@ function formatDate(iso) {
 async function renderTutors() {
   const grid = document.querySelector('.team-grid');
   if (!grid) return;
-  const tutors = await loadJSON('content/tutors.json');
+  const tutors = (await loadJSON('content/tutors.json')).tutors;
   grid.innerHTML = tutors.map(t => `
     <div class="team-card reveal">
       <div class="team-avatar" style="background:${t.color};">${t.image ? `<img src="${t.image}" alt="${escapeHTML(t.name)}" style="width:100%;height:100%;object-fit:cover;">` : t.emoji}</div>
@@ -42,7 +42,7 @@ async function renderTutors() {
 async function renderTestimonials() {
   const grid = document.querySelector('.testimonials-grid');
   if (!grid) return;
-  const testimonials = await loadJSON('content/testimonials.json');
+  const testimonials = (await loadJSON('content/testimonials.json')).testimonials;
   grid.innerHTML = testimonials.map(t => `
     <div class="testi-card reveal">
       <div class="stars">${'★'.repeat(t.stars)}${'☆'.repeat(5 - t.stars)}</div>
@@ -56,7 +56,7 @@ async function renderTestimonials() {
 async function renderFAQs() {
   const list = document.querySelector('.faq-list');
   if (!list) return;
-  const faqs = await loadJSON('content/faqs.json');
+  const faqs = (await loadJSON('content/faqs.json')).faqs;
   list.innerHTML = faqs.map(f => `
     <div class="faq-item">
       <button class="faq-question">${escapeHTML(f.question)} <span class="faq-icon">+</span></button>
@@ -97,7 +97,7 @@ async function renderPricing() {
 async function renderBlogIndex() {
   const grid = document.querySelector('.blog-grid');
   if (!grid) return;
-  const posts = (await loadJSON('content/blog-posts.json')).sort((a, b) => new Date(b.date) - new Date(a.date));
+  const posts = (await loadJSON('content/blog-posts.json')).posts.sort((a, b) => new Date(b.date) - new Date(a.date));
   grid.innerHTML = posts.map(p => `
     <div class="blog-card reveal">
       <div class="blog-thumb" style="background:${p.color || 'linear-gradient(135deg,#0d2137,#1a4f82)'};">${p.emoji || '📚'}</div>
@@ -117,7 +117,7 @@ async function renderBlogPost() {
   const article = document.querySelector('.blog-post');
   if (!article) return;
   const slug = new URLSearchParams(location.search).get('slug');
-  const posts = await loadJSON('content/blog-posts.json');
+  const posts = (await loadJSON('content/blog-posts.json')).posts;
   const post = posts.find(p => p.slug === slug);
   if (!post) {
     article.innerHTML = '<p>Sorry, we couldn\'t find that post. <a href="blog.html">Back to Blog</a></p>';

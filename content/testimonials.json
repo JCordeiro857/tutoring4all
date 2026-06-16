@@ -1,4 +1,5 @@
-[
+{
+"testimonials": [
   {
     "stars": 5,
     "quote": "Our tutor was absolutely wonderful with my daughter. Her confidence in Maths has improved enormously and she's no longer dreading school. Couldn't recommend Tutoring4All more highly.",
@@ -21,3 +22,4 @@
     "initial": "L"
   }
 ]
+}
